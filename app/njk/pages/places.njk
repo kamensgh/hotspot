@@ -1,0 +1,224 @@
+<!-- events.nunjucks -->
+{% set title='Places' %}
+{% extends "site_base.njk" %}
+{% set baseUrl = ".." %}
+
+{% block stylesheet %}
+<link href="{{ baseUrl }}/app/dist/styles/places.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="align-items-end banner smaller d-flex" style="background-image: url('../app/dist/images/70.jpg');">
+
+    <div class="container">
+        <h1 class="name">Places</h1>
+    </div>
+    <div class="overlay"></div>
+</div>
+
+<div class="filters">
+        <div class="container">
+            <form action="" class="d-flex filters__column flex-column flex-md-row justify-content-between">
+                <div class="inner">     
+                    <input type="text" placeholder="Search for whatever"  class="form-control flex-fill">
+                    
+                </div>
+                <div class="inner">
+                        <select name="event_category" class="filters__select flex-fill">
+                            <option value="all">All Categories</option>
+                            <option value="">Music</option>
+                        </select>
+                </div> 
+            </form>
+                   
+        </div>
+</div>
+
+<div class="container my-5">
+    <div class="">
+            <div class="">
+                    <div class="">
+                       
+                        <div class="tiny--cards mt-5">
+                                <section class="mb-5 mb-md-0">
+                                    <div class="d-flex pt-3 flex-wrap justify-content-between">
+                                        <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                            <a href="single-place.html">
+                                                <div class="card-header p-0 border-0">
+                                                    <img src="{{ baseUrl }}/app/dist/images/233.jpeg" alt="" class="">
+                                                </div>
+                                                <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                                    <p class="card-title mb-1 text-muted small">Dr Isert St, Accra</p>
+                                                    <h4 class="card-text">+233 Jazz Bar & Grill</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                            
+                                        <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                            <div class="card-header p-0 border-0">
+                                                <img src="{{ baseUrl }}/app/dist/images/CL.jpg" alt="" class="">
+                                            </div>
+                                            <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                                <p class="card-title mb-1 text-muted small"> Stanbic Heights</p>
+                                                <h4 class="card-text">Coco Lounge</h4>
+                                            </div>                                
+                                        </div>
+                            
+                                        <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                            <div class="card-header p-0 border-0">
+                                                <img src="{{ baseUrl }}/app/dist/images/AZ.jpg" alt="" class="">
+                                            </div>
+                                            <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                                <p class="card-title mb-1 text-muted small">9 Sir. Arku Korsah Rd, Accra</p>
+                                                <h4 class="card-text">Azmera Restaurant</h4>
+                                            </div>                                
+                                        </div>
+                                        <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                            <a href="single-place.html">
+                                                <div class="card-header p-0 border-0">
+                                                    <img src="{{ baseUrl }}/app/dist/images/233.jpeg" alt="" class="">
+                                                </div>
+                                                <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                                    <p class="card-title mb-1 text-muted small">Dr Isert St, Accra</p>
+                                                    <h4 class="card-text">+233 Jazz Bar & Grill</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                            
+                                        <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                            <div class="card-header p-0 border-0">
+                                                <img src="{{ baseUrl }}/app/dist/images/CL.jpg" alt="" class="">
+                                            </div>
+                                            <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                                <p class="card-title mb-1 text-muted small"> Stanbic Heights</p>
+                                                <h4 class="card-text">Coco Lounge</h4>
+                                            </div>                                
+                                        </div>
+                            
+                                        <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                            <div class="card-header p-0 border-0">
+                                                <img src="{{ baseUrl }}/app/dist/images/AZ.jpg" alt="" class="">
+                                            </div>
+                                            <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                                <p class="card-title mb-1 text-muted small">9 Sir. Arku Korsah Rd, Accra</p>
+                                                <h4 class="card-text">Azmera Restaurant</h4>
+                                            </div>                                
+                                        </div>
+                                        <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                                <a href="single-place.html">
+                                                    <div class="card-header p-0 border-0">
+                                                        <img src="{{ baseUrl }}/app/dist/images/233.jpeg" alt="" class="">
+                                                    </div>
+                                                    <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                                        <p class="card-title mb-1 text-muted small">Dr Isert St, Accra</p>
+                                                        <h4 class="card-text">+233 Jazz Bar & Grill</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                
+                                            <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                                <div class="card-header p-0 border-0">
+                                                    <img src="{{ baseUrl }}/app/dist/images/CL.jpg" alt="" class="">
+                                                </div>
+                                                <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                                    <p class="card-title mb-1 text-muted small"> Stanbic Heights</p>
+                                                    <h4 class="card-text">Coco Lounge</h4>
+                                                </div>                                
+                                            </div>
+                                
+                                            <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                                <div class="card-header p-0 border-0">
+                                                    <img src="{{ baseUrl }}/app/dist/images/AZ.jpg" alt="" class="">
+                                                </div>
+                                                <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                                    <p class="card-title mb-1 text-muted small">9 Sir. Arku Korsah Rd, Accra</p>
+                                                    <h4 class="card-text">Azmera Restaurant</h4>
+                                                </div>                                
+                                            </div>
+                                            <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                                <a href="single-place.html">
+                                                    <div class="card-header p-0 border-0">
+                                                        <img src="{{ baseUrl }}/app/dist/images/233.jpeg" alt="" class="">
+                                                    </div>
+                                                    <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                                        <p class="card-title mb-1 text-muted small">Dr Isert St, Accra</p>
+                                                        <h4 class="card-text">+233 Jazz Bar & Grill</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                
+                                            <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                                <div class="card-header p-0 border-0">
+                                                    <img src="{{ baseUrl }}/app/dist/images/CL.jpg" alt="" class="">
+                                                </div>
+                                                <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                                    <p class="card-title mb-1 text-muted small"> Stanbic Heights</p>
+                                                    <h4 class="card-text">Coco Lounge</h4>
+                                                </div>                                
+                                            </div>
+                                
+                                            <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                                <div class="card-header p-0 border-0">
+                                                    <img src="{{ baseUrl }}/app/dist/images/AZ.jpg" alt="" class="">
+                                                </div>
+                                                <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                                    <p class="card-title mb-1 text-muted small">9 Sir. Arku Korsah Rd, Accra</p>
+                                                    <h4 class="card-text">Azmera Restaurant</h4>
+                                                </div>                                
+                                            </div>
+                            
+                                        
+                                    </div>
+                                </section>
+                
+                             
+                        </div>
+                        <div class="container show_all text-center">
+                            <a href="" class="">View more</a>
+                        </div>
+                    </div>
+                 
+                       
+                </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block scripts %} 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+<script>
+    $( ".event_range" ).hide();
+    $(document).ready(function(){
+
+      
+
+        var selected =  $( ".event_date" ).val();
+
+        $( ".event_date" ).change(function(){
+            var selected = $(this).val();
+            //   alert(selected);
+            if (selected == 'range'){
+                // alert("hey");
+                $( ".event_date" ).hide();
+                $( ".event_range" ).fadeIn('slow');
+            }
+        });
+        
+
+
+
+    });
+</script>
+
+{% endblock %}

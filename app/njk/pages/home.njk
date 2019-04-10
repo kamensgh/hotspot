@@ -1,0 +1,596 @@
+<!-- login.nunjucks -->
+{% set title='Home' %}
+{% extends "site_base.njk" %}
+{% set baseUrl = ".." %}
+
+{% block stylesheet %}
+<link href="{{ baseUrl }}/app/dist/styles/home.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+    <div class="">
+        <div class="search-banner d-flex align-items-center">
+            <div class="searchcontent mt-0 mt-lg-5 container">
+                <form action="">
+                    <div class=" d-flex mb-4 flex-wrap">
+                        <div class="group flex-fill">     
+                            <!-- <div class="d-block d-md-none text-light">Name</div>  -->
+                            <input type="text"  class="form-control" placeholder="Search for anything">
+                            <!-- <label class="d-none d-md-block">Name</label> -->
+                        </div>
+                        <div class="group middle flex-fill ">   
+                                <!-- <div class="d-block d-md-none text-light">Location</div>    
+                            <input type="text"  class="form-control">
+                            <label class="d-none d-md-block">Location</label> -->
+                            <select name="event_category" class="filters__select flex-fill">
+                                    <option value="all">All Categories</option>
+                                    <option value="">Music</option>
+                                </select>
+
+                          
+                        </div>
+                        <div class="group">    
+                                <select name="event_date" class="filters__select flex-fill event_date">
+                                        <option value="all">Any Date</option>
+                                        <option value="Today">Today</option>
+                                        <option value="Tomorrow">Tomorrow</option>
+                                        <option value="Today">This weekend</option>
+                                        <option value="Tomorrow">This week</option>
+                                        <option value="Today">Next week</option>
+                                        <option value="Tomorrow">This month</option>
+                                        <option value="Tomorrow">Next month</option>
+                                        <option value="range">Pick a date range...</option>
+                                    </select>
+
+                                    <div class="align-items-center event_range flex-fill">
+                                            <div class="input-group date flex-fill">
+                                                    <input type="text" class="form-control flex-fill" placeholder="Start">
+                                                  
+                                                  </div>
+                                        <span class="font-weight-bold p-2 text-muted">-</span>
+                                        <div class="input-group end-date flex-fill">
+                                            <input type="text" class="form-control flex-fill" placeholder="End">
+                                           
+                                          </div>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                            <button type="button" class="badge badge-pill bg-transparent font-weight-normal">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="happening_now d-flex align-items-center">
+            <div class="container">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <h5 class="mr-4 mb-0"> Check Out whats happening now:</h5>
+                    <a href="#" class="text-dark">Click here</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    <div class="container mt-5">
+            <div class="small--card d-flex flex-wrap justify-content-between"> 
+                    <div class="card bg-dark text-white" data-aos="fade-up" data-aos-once="true"  data-aos-duration="400">
+                        <img class="card-img" src="../app/dist/images/67.jpg" alt="Card image">
+                        <div class="align-items-center align-items-lg-end justify-content-center justify-content-lg-between card-img-overlay d-flex">
+                            <h5 class="card-title">family </h5>
+                        
+                        </div>
+                    </div>
+        
+                        <div class="card bg-dark text-white" data-aos="fade-up" data-aos-once="true"  data-aos-duration="600">
+                            <img class="card-img" src="../app/dist/images/65.jpg" alt="Card image">
+                            <div class="align-items-center align-items-lg-end justify-content-center justify-content-lg-between card-img-overlay d-flex">
+                                <h5 class="card-title">friends </h5>
+                            
+                            </div>
+                        </div>
+        
+                    <div class="card bg-dark text-white" data-aos="fade-up" data-aos-once="true"  data-aos-duration="800">
+                        <img class="card-img" src="../app/dist/images/67.jpg" alt="Card image">
+                        <div class="align-items-center align-items-lg-end justify-content-center justify-content-lg-between card-img-overlay d-flex">
+                            <h5 class="card-title">colleagues </h5>
+                        
+                        </div>
+                    </div>
+        
+                        <div class="card bg-dark text-white" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                            <img class="card-img" src="../app/dist/images/65.jpg" alt="Card image">
+                            <div class="align-items-center align-items-lg-end justify-content-center justify-content-lg-between card-img-overlay d-flex">
+                                <h5 class="card-title">partners </h5>
+                            
+                            </div>
+                        </div>
+                </div>
+        
+      
+    </div>
+
+
+        <div class="container-small" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+            <div class="text-block container">
+                    <h3>Some text to let users know they can login and add events to thier calender</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti veritatis voluptate,laboriosam magni deserunt quas doloribus mollitia maiores cupiditate excepturi?</p>
+            </div>
+
+        </div>
+
+    <div class="container mt-5">
+        <div class="recomendered_timeline" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                <!-- <div class="timeline-head mb-3">
+                    <h4 class="font-weight-light">Looking for an even to attend?</h4>
+                </div> -->
+                <div class="long_tiles">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <div class="tiles px-lg-5 px-3 pb-3 d-flex border-right align-items-end" style="background-image: url('../app/dist/images/72.jpg');">
+                                <div class="align-items-center align-items-lg-end card-img-overlay d-flex justify-content-center justify-content-lg-between title-container">
+                                    <div>
+                                            <div class="title">
+                                                    Music
+                                            </div>
+                                            <!-- <div class="subtitle mt-1">
+                                                Friday, Febuary 10th
+                                            </div> -->
+                                    </div>
+                                  
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                                <div class="tiles px-3 pb-3 d-flex border-right align-items-end" style="background-image: url('../app/dist/images/4.jpg');">
+                                    <div class="align-items-center align-items-lg-end card-img-overlay d-flex justify-content-center justify-content-lg-between title-container">
+                                          
+                                        <div>
+                                                <div class="title">
+                                                        Arts
+                                                </div>
+                                                <!-- <div class="subtitle mt-1">
+                                                    Friday, Febuary 10th
+                                                </div> -->
+                                        </div>
+                                           
+                                    </div>
+    
+                                </div>
+                            
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                                <div class="tiles px-3 pb-3 d-flex align-items-end" style="background-image: url('../app/dist/images/5.jpg');">
+                                    <div class="align-items-center align-items-lg-end card-img-overlay d-flex justify-content-center justify-content-lg-between title-container">
+                                          
+                                        <div>
+                                                <div class="title">
+                                                        Parties
+                                                </div>
+                                                <!-- <div class="subtitle mt-1">
+                                                    Friday, Febuary 10th
+                                                </div> -->
+                                        </div>
+                                          
+                                    </div>
+    
+                                </div>
+                            
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <!-- <div class="mt-4 show_all small text-right">
+                    <a href="" class="">Show All (100+)</a>
+                </div> -->
+            </div>
+
+    </div>
+
+
+        <div class="">
+            <div class="container" style="overflow: auto;">
+                <div class="d-flex event_list">
+                    <div class="d-inline-flex justify-content-between w-100">
+                            <a href="single-event.html">
+                                    <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="400">
+                                        <img class="card-img-top" src="{{baseUrl}}/app/dist/images/57.jpg" alt="Card image cap">
+                                        <div class="card-body pt-4">
+                                                <div class="source-wrapper">
+                                                        <span class="source" title="">
+                                                                <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                        </span>
+                                                    </div>
+                                        <p class="card-text">
+                                            <span class="title d-block h5 mb-1 text-dark">Ghana Tech Summit 2019</span>
+                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                            <span class="rate d-block text-muted small">Paid</span>
+                        
+                                        </p>
+                                        </div>
+                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Friday, Febuary 10th</small>
+                        
+                                        <div>
+                                            <i class="fas fa-share-alt text-muted mr-3"></i>
+                                            <i class="fas fa-bookmark text-muted"></i>
+                                            
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                            </a>
+                            <a href="single-event.html">
+                                <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="600">
+                                    <img class="card-img-top" src="{{baseUrl}}/app/dist/images/55.jpg" alt="Card image cap">
+                                    <div class="card-body pt-4">
+                                            <div class="source-wrapper">
+                                                    <span class="source" title="">
+                                                            <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                    </span>
+                                                </div>
+                                    <p class="card-text">
+                                        <span class="title d-block h5 mb-1 text-dark">Ghana Tech Summit 2019</span>
+                                        <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                        <span class="rate d-block text-muted small">Paid</span>
+                    
+                                    </p>
+                                    </div>
+                                    <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Friday, Febuary 10th</small>
+                    
+                                    <div>
+                                        <i class="fas fa-share-alt text-muted mr-3"></i>
+                                        <i class="fas fa-bookmark text-muted"></i>
+                                        
+                                    </div>
+                                    
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="single-event.html">
+                                <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="800">
+                                    <img class="card-img-top" src="{{baseUrl}}/app/dist/images/42.jpg" alt="Card image cap">
+                                    <div class="card-body pt-4">
+                                            <div class="source-wrapper">
+                                                    <span class="source" title="">
+                                                            <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                    </span>
+                                                </div>
+                                    <p class="card-text">
+                                        <span class="title d-block h5 mb-1 text-dark">Ghana Tech Summit 2019</span>
+                                        <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                        <span class="rate d-block text-muted small">Paid</span>
+                    
+                                    </p>
+                                    </div>
+                                    <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Friday, Febuary 10th</small>
+                    
+                                    <div>
+                                        <i class="fas fa-share-alt text-muted mr-3"></i>
+                                        <i class="fas fa-bookmark text-muted"></i>
+                                        
+                                    </div>
+                                    
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="single-event.html">
+                                <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                    <img class="card-img-top" src="{{baseUrl}}/app/dist/images/65.jpg" alt="Card image cap">
+                                    <div class="card-body pt-4">
+                                            <div class="source-wrapper">
+                                                    <span class="source" title="">
+                                                            <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                    </span>
+                                                </div>
+                                    <p class="card-text">
+                                        <span class="title d-block h5 mb-1 text-dark">Ghana Tech Summit 2019</span>
+                                        <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                        <span class="rate d-block text-muted small">Paid</span>
+                    
+                                    </p>
+                                    </div>
+                                    <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Friday, Febuary 10th</small>
+                    
+                                    <div>
+                                        <i class="fas fa-share-alt text-muted mr-3"></i>
+                                        <i class="fas fa-bookmark text-muted"></i>
+                                        
+                                    </div>
+                                    
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="container show_all small text-right">
+                <a href="" class="">Show All (100+)</a>
+            </div>
+         
+               
+        </div>
+    
+    <div class="container mt-5">
+    
+<!-- 
+        <div class="big--card py-5"> 
+                <section>
+                    <div class="row no-gutters">
+                        <div class="col-md-12">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="{{ baseUrl }}/app/dist/images/70.jpg" alt="Card image">
+                                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                    <div class="card-title text-center">
+                                        <h5 class="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. aerat. Totam in nisi corporis?</h5>
+                                        <a href="" class="btn-light px-5 py-2">More</a>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                      
+                    
+                    </div>
+                </section>
+            </div> -->
+
+
+         
+
+        
+            <div class="recomendered_timeline" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                    <!-- <div class="timeline-head mb-3">
+                        <h4 class="font-weight-light">Recomendered places</h4>
+                    </div> -->
+                    <div class="long_tiles">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-12 col-lg-4">
+                                <div class="tiles px-3 px-lg-5 pb-3 d-flex border-right align-items-end" style="background-image: url('../app/dist/images/2.jpg');">
+                                    <div class="align-items-center align-items-lg-end card-img-overlay d-flex justify-content-center justify-content-lg-between title-container">
+                                            <div class="title">
+                                                    On weekdays
+                                             </div>
+                                             <!-- <div class="subtitle mt-1">
+                                                See places
+                                             </div> -->
+         
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="tiles px-3 pb-3 d-flex border-right align-items-end" style="background-image: url('../app/dist/images/73.jpg');">
+                                        <div class="align-items-center align-items-lg-end card-img-overlay d-flex justify-content-center justify-content-lg-between title-container">
+                                                <div class="title">
+                                                        Friday Night
+                                                </div>
+                                                <!-- <div class="subtitle mt-1">
+                                                        See places
+                                                </div> -->
+                                            </div>
+        
+                                    </div>
+                                
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="tiles px-3 pb-3 d-flex align-items-end" style="background-image: url('../app/dist/images/sb.jpg');">
+                                        <div class="align-items-center align-items-lg-end card-img-overlay d-flex justify-content-center justify-content-lg-between title-container">
+                                                <div class="title">
+                                                        Going on a date
+                                                </div>
+                                                <!-- <div class="subtitle mt-1">
+                                                        See places
+                                                </div> -->
+                                            </div>
+        
+                                    </div>
+                                
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                    <!-- <div class="mt-4 show_all small text-right">
+                        <a href="" class="">Show All (100+)</a>
+                    </div> -->
+                </div>
+      
+
+      
+
+
+        <div class="tiny--cards mt-5">
+                <section class="mb-5 mb-md-0">
+                    <div class="d-flex flex-md-wrap pt-3 cover justify-content-between">
+                        <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="200">
+                            <a href="single-place.html">
+                                <div class="card-header p-0 border-0">
+                                    <img src="{{ baseUrl }}/app/dist/images/233.jpeg" alt="" class="">
+                                </div>
+                                <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                    <p class="card-title mb-1 text-muted small">Dr Isert St, Accra</p>
+                                    <h4 class="card-text">+233 Jazz Bar & Grill</h4>
+                                </div>
+                            </a>
+                        </div>
+            
+                        <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="300">
+                            <div class="card-header p-0 border-0">
+                                <img src="{{ baseUrl }}/app/dist/images/CL.jpg" alt="" class="">
+                            </div>
+                            <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                <p class="card-title mb-1 text-muted small"> Stanbic Heights</p>
+                                <h4 class="card-text">Coco Lounge</h4>
+                            </div>                                
+                        </div>
+            
+                        <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="400">
+                            <div class="card-header p-0 border-0">
+                                <img src="{{ baseUrl }}/app/dist/images/AZ.jpg" alt="" class="">
+                            </div>
+                            <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                <p class="card-title mb-1 text-muted small">9 Sir. Arku Korsah Rd, Accra</p>
+                                <h4 class="card-text">Azmera Restaurant</h4>
+                            </div>                                
+                        </div>
+                        <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="600">
+                            <a href="single-place.html">
+                                <div class="card-header p-0 border-0">
+                                    <img src="{{ baseUrl }}/app/dist/images/233.jpeg" alt="" class="">
+                                </div>
+                                <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                    <p class="card-title mb-1 text-muted small">Dr Isert St, Accra</p>
+                                    <h4 class="card-text">+233 Jazz Bar & Grill</h4>
+                                </div>
+                            </a>
+                        </div>
+            
+                        <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="800">
+                            <div class="card-header p-0 border-0">
+                                <img src="{{ baseUrl }}/app/dist/images/CL.jpg" alt="" class="">
+                            </div>
+                            <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                <p class="card-title mb-1 text-muted small"> Stanbic Heights</p>
+                                <h4 class="card-text">Coco Lounge</h4>
+                            </div>                                
+                        </div>
+            
+                        <div class="card flex-row mb-5" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                            <div class="card-header p-0 border-0">
+                                <img src="{{ baseUrl }}/app/dist/images/AZ.jpg" alt="" class="">
+                            </div>
+                            <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                <p class="card-title mb-1 text-muted small">9 Sir. Arku Korsah Rd, Accra</p>
+                                <h4 class="card-text">Azmera Restaurant</h4>
+                            </div>                                
+                        </div>
+            
+                        
+                    </div>
+                </section>
+
+                <div class="mt-4 show_all small text-right">
+                    <a href="" class="">Show All (100+)</a>
+                </div>
+        </div>
+
+
+
+        <div class="medium--card d-flex flex-wrap justify-content-between"> 
+                <div class="card big bg-dark text-white" data-aos="fade-up" data-aos-once="true"  data-aos-duration="600">
+                    <img class="card-img" src="../app/dist/images/67.jpg" alt="Card image">
+                    <div class="align-items-center align-items-lg-end justify-content-center justify-content-lg-between card-img-overlay d-flex">
+                        <h5 class="card-title">family </h5>
+                    
+                    </div>
+                </div>
+    
+                    <div class="card big bg-dark text-white" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                        <img class="card-img" src="../app/dist/images/65.jpg" alt="Card image">
+                        <div class="align-items-center align-items-lg-end justify-content-center justify-content-lg-between card-img-overlay d-flex">
+                            <h5 class="card-title">Concerts </h5>
+                        
+                        </div>
+                    </div>
+    
+                <div class="card bg-dark semi text-white" data-aos="fade-up" data-aos-once="true"  data-aos-duration="200">
+                    <img class="card-img" src="../app/dist/images/67.jpg" alt="Card image">
+                    <div class="align-items-center align-items-lg-end justify-content-center justify-content-lg-between card-img-overlay d-flex">
+                        <h5 class="card-title">Pop ups </h5>
+                    
+                    </div>
+                </div>
+                <div class="card bg-dark semi text-white" data-aos="fade-up" data-aos-once="true"  data-aos-duration="600">
+                        <img class="card-img" src="../app/dist/images/67.jpg" alt="Card image">
+                        <div class="align-items-center align-items-lg-end justify-content-center justify-content-lg-between card-img-overlay d-flex">
+                            <h5 class="card-title">Festivals </h5>
+                        
+                        </div>
+                    </div>
+    
+                    <div class="card semi last bg-dark text-white" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                        <img class="card-img" src="../app/dist/images/65.jpg" alt="Card image">
+                        <div class="align-items-center align-items-lg-end justify-content-center justify-content-lg-between card-img-overlay d-flex">
+                            <h5 class="card-title">Seminars </h5>
+                        
+                        </div>
+                    </div>
+            </div>
+
+    </div>
+
+        <div class="create-event-banner d-flex align-items-center ">
+            <div class="container">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <h4 class="mr-4">Create your events now</h4>
+                    <button type="button" class="badge badge-pill bg-transparent border-warning font-weight-light text-warning">Click here</button>
+                </div>
+            </div>
+          
+
+        </div>
+   
+</div>
+
+{% endblock %}
+
+{% block scripts %} 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $( ".event_range" ).hide();
+    $(document).ready(function(){
+
+      
+
+        var selected =  $( ".event_date" ).val();
+
+        $( ".event_date" ).change(function(){
+            var selected = $(this).val();
+            //   alert(selected);
+            if (selected == 'range'){
+                // alert("hey");
+                
+                // $( ".middle" ).removeClass('flex-fill');
+                $( ".event_date" ).hide();
+                $( ".event_range" ).fadeIn('slow');
+
+                // setTimeout(function() { 
+                //     $( ".middle" ).addClass('flex-fill');
+                // }, 200);
+            }
+        });
+        
+
+
+
+    });
+</script>
+
+{% endblock %}
+
+
+

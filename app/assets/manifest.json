@@ -1,0 +1,52 @@
+{
+    "dependencies": {
+      "main.js": {
+        "files": [
+          "scripts/utilities.js",
+          "scripts/main.js"
+        ],
+        "main": true
+      },
+      "main.css": {
+        "files": [
+          "styles/main.scss"
+        ],
+        "main": true
+      },
+      "login.css": {
+        "files": [
+          "styles/pages/login.scss"
+        ]
+      },
+      "home.css": {
+        "files": [
+          "styles/pages/home.scss"
+        ]
+      },
+      "single.css": {
+        "files": [
+          "styles/pages/single.scss"
+        ]
+      }, 
+      "events.css": {
+        "files": [
+          "styles/pages/events.scss"
+        ]
+      },
+      "places.css": {
+        "files": [
+          "styles/pages/places.scss"
+        ]
+      },
+      "search.css": {
+        "files": [
+          "styles/pages/search.scss"
+        ]
+      },
+      "jquery.js": {
+        "bower": [
+          "jquery"
+        ]
+      }
+    }
+  }

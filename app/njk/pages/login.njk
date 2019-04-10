@@ -1,0 +1,91 @@
+<!-- login.nunjucks -->
+{% set title='Login' %}
+{% extends "base.njk" %}
+<!-- {% set baseUrl = ".." %} -->
+
+
+
+{% block stylesheet %}
+<link href="{{ baseUrl }}/app/dist/styles/login.css" rel="stylesheet">
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6 col-lg-5">
+        <div class="login-form-containter m-auto container d-flex flex-column justify-content-center">
+            <!-- <div class="top-0 pt-3">
+                logo
+            </div> -->
+            <div>
+                <div class="mb-5 title">
+                    <h1> <span class="text-muted">Odit explicabo</span>  ratione minima velit.</h1>
+                    <p>Lorem ipsum dolor,magni ab.</p>
+                </div>
+               
+
+                <form class="login-form">
+                        <div class="border mb-4">
+                            <div class="group border-bottom">      
+                                <input type="text" required class="form-control pt-4 pl-4">
+                                <label>Username</label>
+                            </div>
+                            <div class="group">      
+                                <input type="password" required class="form-control pt-4 pl-4">
+                                <label>Password</label>
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-6">
+                                    <div class="form-group pt-1 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                        </div>
+                            </div>
+                            <div class="col-12 mt-2 mt-md-0 col-md-6 text-md-right text-left">
+                                <a href="#" class="text-dark d-block pt-1">Forget password</a>
+                            </div>
+                        </div>
+                       
+                           
+    
+                            <div class="mt-4">
+                                <a href="#" class="btn btn-primary mr-0 mr-md-3">Login</a>
+                                <button type="button" class="btn btn-outline-primary">Sign up</button>
+                            </div>
+                    </form>
+    
+                <p class="text-muted mt-5">Lorem ipsum dolor,magni ab. 
+                    <a class="text-dark font-weight-bold">Terms & Conditions</a> 
+                </p>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-7 d-none d-md-block">
+        <div class="login-bg-image  ">
+            <div class="align-items-center bg-image-inner d-flex h-100 justify-content-center">
+                <div class="align-items-center d-inline-flex inner justify-content-center">
+                    <div class="content">
+                        logo
+                    </div>
+
+                </div>
+
+            </div>
+        
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

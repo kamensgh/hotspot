@@ -1,0 +1,25 @@
+{% macro modal(id, content, footer) %}
+<!-- Modal: Customer Details -->
+<div class="modal fade" id="{{ id }}" tabindex="-1" role="dialog" aria-labelledby="{{ id }}Label">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close mr-1 text-right" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="modal-body pt-0 px-4">
+
+                {{ content | safe }}
+
+            </div>
+
+            {%if footer %}
+                <div class="modal-footer d-flex justify-content-center">
+                    {{ footer | safe }}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!-- ./Modal: Customer Details -->
+{% endmacro %}

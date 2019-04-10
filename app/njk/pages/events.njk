@@ -1,0 +1,435 @@
+<!-- events.nunjucks -->
+{% set title='Event' %}
+{% extends "site_base.njk" %}
+{% set baseUrl = ".." %}
+
+{% block stylesheet %}
+<link href="{{ baseUrl }}/app/dist/styles/events.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="align-items-end banner smaller d-flex" style="background-image: url('../app/dist/images/68.jpg');">
+
+    <div class="container">
+        <h1 class="name">Events</h1>
+    </div>
+    <div class="overlay"></div>
+</div>
+
+<div class="filters">
+        <div class="container">
+            <form action="" class="d-flex filters__column flex-column flex-md-row justify-content-between">
+                <div class="inner">     
+                    <input type="text" placeholder="Search for whatever"  class="form-control flex-fill">
+                    
+                </div>
+                <div class="inner">
+                        <select name="event_category" class="filters__select flex-fill">
+                            <option value="all">All Categories</option>
+                            <option value="">Music</option>
+                        </select>
+                </div>
+               <div class="inner">
+                    <select name="event_date" class="filters__select flex-fill event_date">
+                            <option value="all">Any Date</option>
+                            <option value="Today">Today</option>
+                            <option value="Tomorrow">Tomorrow</option>
+                            <option value="Today">This weekend</option>
+                            <option value="Tomorrow">This week</option>
+                            <option value="Today">Next week</option>
+                            <option value="Tomorrow">This month</option>
+                            <option value="Tomorrow">Next month</option>
+                            <option value="range">Pick a date range...</option>
+                        </select>
+
+                        <div class="align-items-center event_range">
+                                <div class="input-group date">
+                                        <input type="text" class="form-control flex-fill" placeholder="Start">
+                                      
+                                      </div>
+                            <span class="font-weight-bold p-2 text-muted">-</span>
+                            <div class="input-group date">
+                                <input type="text" class="form-control flex-fill" placeholder="End">
+                               
+                              </div>
+                        </div>
+               </div>
+               
+            </form>
+                   
+        </div>
+</div>
+
+<div class="container my-5">
+    <div class="py-0 py-lg-5">
+            <div class="">
+                    <div class="container-fluid px-4" style="overflow: auto;">
+                        <div class="d-flex event_list">
+                            <div class="d-inline-flex justify-content-between flex-wrap w-100">
+                                    <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                        <a href="single-event.html">
+                                            <img class="card-img-top" src="{{baseUrl}}/app/dist/images/57.jpg" alt="Card image cap">
+                                            <div class="card-body pt-4">
+                                                    <div class="source-wrapper">
+                                                            <span class="source" title="">
+                                                                    <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                            </span>
+                                                        </div>
+                                            <p class="card-text">
+                                                <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                                <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                                <span class="rate d-block text-muted small">Paid</span>
+                            
+                                            </p>
+                                            </div>
+                                            <div class="card-footer d-inline-flex w-100 justify-content-between align-items-center">
+                                            <small class="text-muted">Friday, Febuary 10th</small>
+                            
+                                            <div>
+                                                <i class="fas fa-share-alt text-muted mr-3"></i>
+                                                <i class="fas fa-bookmark text-muted"></i>
+                                                
+                                            </div>
+                                            
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                        <img class="card-img-top" src="{{baseUrl}}/app/dist/images/55.jpg" alt="Card image cap">
+                                        <div class="card-body pt-4">
+                                                <div class="source-wrapper">
+                                                        <span class="source" title="">
+                                                                <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                        </span>
+                                                    </div>
+                                        <p class="card-text">
+                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                            <span class="rate d-block text-muted small">Paid</span>
+                        
+                                        </p>
+                                        </div>
+                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Friday, Febuary 10th</small>
+                        
+                                        <div>
+                                            <i class="fas fa-share-alt text-muted mr-3"></i>
+                                            <i class="fas fa-bookmark text-muted"></i>
+                                            
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                        <img class="card-img-top" src="{{baseUrl}}/app/dist/images/42.jpg" alt="Card image cap">
+                                        <div class="card-body pt-4">
+                                                <div class="source-wrapper">
+                                                        <span class="source" title="">
+                                                                <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                        </span>
+                                                    </div>
+                                        <p class="card-text">
+                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                            <span class="rate d-block text-muted small">Paid</span>
+                        
+                                        </p>
+                                        </div>
+                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Friday, Febuary 10th</small>
+                        
+                                        <div>
+                                            <i class="fas fa-share-alt text-muted mr-3"></i>
+                                            <i class="fas fa-bookmark text-muted"></i>
+                                            
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                        <img class="card-img-top" src="{{baseUrl}}/app/dist/images/65.jpg" alt="Card image cap">
+                                        <div class="card-body pt-4">
+                                                <div class="source-wrapper">
+                                                        <span class="source" title="">
+                                                                <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                        </span>
+                                                    </div>
+                                        <p class="card-text">
+                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                            <span class="rate d-block text-muted small">Paid</span>
+                        
+                                        </p>
+                                        </div>
+                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Friday, Febuary 10th</small>
+                        
+                                        <div>
+                                            <i class="fas fa-share-alt text-muted mr-3"></i>
+                                            <i class="fas fa-bookmark text-muted"></i>
+                                            
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                            <img class="card-img-top" src="{{baseUrl}}/app/dist/images/57.jpg" alt="Card image cap">
+                                            <div class="card-body pt-4">
+                                                    <div class="source-wrapper">
+                                                            <span class="source" title="">
+                                                                    <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                            </span>
+                                                        </div>
+                                            <p class="card-text">
+                                                <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                                <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                                <span class="rate d-block text-muted small">Paid</span>
+                            
+                                            </p>
+                                            </div>
+                                            <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                            <small class="text-muted">Friday, Febuary 10th</small>
+                            
+                                            <div>
+                                                <i class="fas fa-share-alt text-muted mr-3"></i>
+                                                <i class="fas fa-bookmark text-muted"></i>
+                                                
+                                            </div>
+                                            
+                                            </div>
+                                    </div>
+                                    <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                        <img class="card-img-top" src="{{baseUrl}}/app/dist/images/55.jpg" alt="Card image cap">
+                                        <div class="card-body pt-4">
+                                                <div class="source-wrapper">
+                                                        <span class="source" title="">
+                                                                <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                        </span>
+                                                    </div>
+                                        <p class="card-text">
+                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                            <span class="rate d-block text-muted small">Paid</span>
+                        
+                                        </p>
+                                        </div>
+                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Friday, Febuary 10th</small>
+                        
+                                        <div>
+                                            <i class="fas fa-share-alt text-muted mr-3"></i>
+                                            <i class="fas fa-bookmark text-muted"></i>
+                                            
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                        <img class="card-img-top" src="{{baseUrl}}/app/dist/images/42.jpg" alt="Card image cap">
+                                        <div class="card-body pt-4">
+                                                <div class="source-wrapper">
+                                                        <span class="source" title="">
+                                                                <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                        </span>
+                                                    </div>
+                                        <p class="card-text">
+                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                            <span class="rate d-block text-muted small">Paid</span>
+                        
+                                        </p>
+                                        </div>
+                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Friday, Febuary 10th</small>
+                        
+                                        <div>
+                                            <i class="fas fa-share-alt text-muted mr-3"></i>
+                                            <i class="fas fa-bookmark text-muted"></i>
+                                            
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                        <img class="card-img-top" src="{{baseUrl}}/app/dist/images/65.jpg" alt="Card image cap">
+                                        <div class="card-body pt-4">
+                                                <div class="source-wrapper">
+                                                        <span class="source" title="">
+                                                                <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                        </span>
+                                                    </div>
+                                        <p class="card-text">
+                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                            <span class="rate d-block text-muted small">Paid</span>
+                        
+                                        </p>
+                                        </div>
+                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Friday, Febuary 10th</small>
+                        
+                                        <div>
+                                            <i class="fas fa-share-alt text-muted mr-3"></i>
+                                            <i class="fas fa-bookmark text-muted"></i>
+                                            
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                        <img class="card-img-top" src="{{baseUrl}}/app/dist/images/57.jpg" alt="Card image cap">
+                                        <div class="card-body pt-4">
+                                                <div class="source-wrapper">
+                                                        <span class="source" title="">
+                                                                <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                        </span>
+                                                    </div>
+                                        <p class="card-text">
+                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                            <span class="rate d-block text-muted small">Paid</span>
+                        
+                                        </p>
+                                        </div>
+                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Friday, Febuary 10th</small>
+                        
+                                        <div>
+                                            <i class="fas fa-share-alt text-muted mr-3"></i>
+                                            <i class="fas fa-bookmark text-muted"></i>
+                                            
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                        <img class="card-img-top" src="{{baseUrl}}/app/dist/images/55.jpg" alt="Card image cap">
+                                        <div class="card-body pt-4">
+                                                <div class="source-wrapper">
+                                                        <span class="source" title="">
+                                                                <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                        </span>
+                                                    </div>
+                                        <p class="card-text">
+                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                            <span class="rate d-block text-muted small">Paid</span>
+                        
+                                        </p>
+                                        </div>
+                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Friday, Febuary 10th</small>
+                        
+                                        <div>
+                                            <i class="fas fa-share-alt text-muted mr-3"></i>
+                                            <i class="fas fa-bookmark text-muted"></i>
+                                            
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                        <img class="card-img-top" src="{{baseUrl}}/app/dist/images/42.jpg" alt="Card image cap">
+                                        <div class="card-body pt-4">
+                                                <div class="source-wrapper">
+                                                        <span class="source" title="">
+                                                                <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                        </span>
+                                                    </div>
+                                        <p class="card-text">
+                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                            <span class="rate d-block text-muted small">Paid</span>
+                        
+                                        </p>
+                                        </div>
+                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Friday, Febuary 10th</small>
+                        
+                                        <div>
+                                            <i class="fas fa-share-alt text-muted mr-3"></i>
+                                            <i class="fas fa-bookmark text-muted"></i>
+                                            
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
+                                        <img class="card-img-top" src="{{baseUrl}}/app/dist/images/65.jpg" alt="Card image cap">
+                                        <div class="card-body pt-4">
+                                                <div class="source-wrapper">
+                                                        <span class="source" title="">
+                                                                <img class="" src="{{baseUrl}}/app/dist/images/01.jpg" alt="Card image cap" > 
+                                                        </span>
+                                                    </div>
+                                        <p class="card-text">
+                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                            <span class="rate d-block text-muted small">Paid</span>
+                        
+                                        </p>
+                                        </div>
+                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                        <small class="text-muted">Friday, Febuary 10th</small>
+                        
+                                        <div>
+                                            <i class="fas fa-share-alt text-muted mr-3"></i>
+                                            <i class="fas fa-bookmark text-muted"></i>
+                                            
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="container show_all text-center">
+                        <a href="" class="">View more</a>
+                    </div>
+                 
+                       
+                </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block scripts %} 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
+<script>
+    $( ".event_range" ).hide();
+    $(document).ready(function(){
+
+      
+
+        var selected =  $( ".event_date" ).val();
+
+        $( ".event_date" ).change(function(){
+            var selected = $(this).val();
+            //   alert(selected);
+            if (selected == 'range'){
+                // alert("hey");
+                $( ".event_date" ).hide();
+                $( ".event_range" ).fadeIn('slow');
+            }
+        });
+        
+
+
+
+    });
+</script>
+
+{% endblock %}

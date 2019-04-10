@@ -1,0 +1,78 @@
+<!-- single events.nunjucks -->
+{% set title='Single Place' %}
+{% extends "site_base.njk" %}
+{% set baseUrl = ".." %}
+
+{% block stylesheet %}
+<link href="{{ baseUrl }}/app/dist/styles/single.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="align-items-end banner d-flex" style="background-image: url('../app/dist/images/43.jpg');">
+
+    <div class="container">
+        <h1 class="name">Place Name</h1>
+    </div>
+    <div class="overlay"></div>
+</div>
+<div class="container mt-3 mt-md-5">
+    <div class="row no-gutters">
+        <div class="col-md-8">
+            <div class="single-content">
+                <h3>Description</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel reiciendis est, architecto provident rerum tempora, itaque adipisci cumque quis sit non a libero natus aliquid sunt voluptatibus nihil magni.</p>
+
+                <div class="my-5">
+                    <span class="tags">family</span> 
+                    <span class="tags">date</span> 
+                    <span class="tags">live music</span> 
+                    <span class="tags">food</span> 
+                    <span class="tags">sushi</span> 
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <div class="info">
+                    <div class="event-detials">
+                        <div class="event-detials-block">
+                                <i class="fas fa-phone"></i>
+                            <span>+233 24 631 4044</span>
+                        </div>
+                        <div class="event-detials-block">
+                            <i class="fas fa-clock"></i>
+                            <span>7:30 pm - 12 midnight</span>
+                        </div>
+                        <div class="event-detials-block">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Asafoatse Tempong St, Accra</span>
+                        </div>
+                        <div class="event-detials-block">
+                            <i class="fas fa-globe-europe"></i>
+                            <a href="">www.hotspot.com</a>
+                        </div>
+                    </div>
+
+                    <div class="event-map">
+                        <div class="act-map">
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+{% endblock %}
