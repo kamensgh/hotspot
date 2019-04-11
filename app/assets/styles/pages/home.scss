@@ -356,6 +356,10 @@
             margin-right: 0;
         }
 
+        a{
+            height: inherit;
+        }
+
         .card-img-overlay{
             background: -webkit-gradient(linear,left bottom,left top,from(#1a1d28),color-stop(45.56%,rgba(29, 31, 44, 0.54)),to(transparent));
             background: -webkit-linear-gradient(bottom,#1a1d28,rgba(29, 31, 44, 0.54) 45.56%,transparent);
@@ -375,6 +379,7 @@
                 -webkit-transition: .2s;
                 -o-transition: .2s;
                 transition: .2s;
+                color: white;
 
                 @media (max-width: 576px) {
                     font-size: 20px;
@@ -427,6 +432,7 @@
         border-radius: 20px;
         overflow: hidden;
         max-width: unset;
+        cursor: pointer;
 
 
         &.big{
@@ -484,6 +490,7 @@
                 -webkit-transition: .2s;
                 -o-transition: .2s;
                 transition: .2s;
+                color: white;
 
                 @media (max-width: 576px) {
                     font-size: 20px;
