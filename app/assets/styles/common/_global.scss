@@ -10,6 +10,10 @@ html * {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.pointer{
+    cursor: pointer !important;
+}
+
 .form-control:focus{
     box-shadow: none;
 }
