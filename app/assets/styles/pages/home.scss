@@ -540,6 +540,14 @@
         color: #fff;
     }
 
+    a{
+        border: 1px solid #fcd27b;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
    
 
     // &::after{
