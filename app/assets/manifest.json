@@ -33,6 +33,11 @@
           "styles/pages/events.scss"
         ]
       },
+      "create-event.css": {
+        "files": [
+          "styles/pages/create-event.scss"
+        ]
+      },
       "places.css": {
         "files": [
           "styles/pages/places.scss"

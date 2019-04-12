@@ -96,7 +96,7 @@
 }
 
 .card{
-    margin-bottom: 36px;
+    margin-bottom: 26px;
     width: 365px;
     max-width: unset;
 
@@ -148,6 +148,10 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     font-weight: 500;
+
+    &:hover{
+        text-decoration: none;
+    }
 
 }
 

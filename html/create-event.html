@@ -18,13 +18,13 @@
 
 
     
-<link href="../app/dist/styles/single.css" rel="stylesheet">
+<link href="../app/dist/styles/create-event.css" rel="stylesheet">
 
 
 
 
 
-    <title>Single Place | My Hotspot</title>
+    <title>Create Event | My Hotspot</title>
   </head>
   <body data-aos="fade" data-aos-once="true"  data-aos-duration="400">
         <div class="wrapper">
@@ -100,66 +100,128 @@
               <div class="">
                   
 
-<div class="align-items-end banner d-flex" style="background-image: url('../app/dist/images/43.jpg');">
+<div class="align-items-end banner smaller d-flex" style="background-image: url('../app/dist/images/68.jpg');">
 
     <div class="container">
-        <h1 class="name">Place Name</h1>
+        <h1 class="name">Create Event</h1>
     </div>
     <div class="overlay"></div>
 </div>
-<div class="container mt-3 mt-md-5">
-    <div class="row no-gutters">
-        <div class="col-md-8">
-            <div class="single-content">
-                <h3>Description</h3>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel reiciendis est, architecto provident rerum tempora, itaque adipisci cumque quis sit non a libero natus aliquid sunt voluptatibus nihil magni.</p>
 
-                <div class="my-5">
-                    <span class="tags">family</span> 
-                    <span class="tags">date</span> 
-                    <span class="tags">live music</span> 
-                    <span class="tags">food</span> 
-                    <span class="tags">sushi</span> 
-                </div>
-            </div>
-
-        </div>
-        <div class="col-md-4">
-            <div class="info">
-                    <div class="event-detials">
-                        <div class="event-detials-block">
-                                <i class="fas fa-phone"></i>
-                            <span>+233 24 631 4044</span>
+<div class="container my-5">
+        <div class="">
+                <h4 class="section-title mb-4">Event Details</h4>
+                <form>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="personal-info">
+                                
+                                
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Title</label>
+                                            <input type="text" class="form-control" id="" aria-describedby="" placeholder="eg. Afrochella">
+                                            <small id="nameHelp" class="form-text d-none text-muted">We'll never share your email with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="exampleInputEmail1">Location</label>
+                                                <input type="text" class="form-control" id="" aria-describedby="" placeholder="El Wak Sports Stadium">
+                                                <small id="nameHelp" class="form-text d-none text-muted">We'll never share your email with anyone else.</small>
+                                            </div>
+                                            <div class="form-group">
+                                                    <label for="exampleInputEmail1">Date</label>
+                                                    <input type="text" class="form-control" id="" aria-describedby="" placeholder="MARCH 20, 2019">
+                                                    <small id="nameHelp" class="form-text d-none text-muted">We'll never share your email with anyone else.</small>
+                                                </div>
+            
+                                        <div class="row">
+                                                <div class="col-6 pl-0">
+                                                        <div class="form-group">
+                                                                <label for="exampleInputEmail1">Starts</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="3:12">
+                                                                <small id="emailHelp" class="form-text d-none text-muted">We'll never share your email with anyone else.</small>
+                                                            </div>
+                                                </div>
+                                                <div class="col-6 pr-0">
+                                                        <div class="form-group">
+                                                                <label for="exampleInputEmail1">Ends</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="3:12">
+                                                                <small id="emailHelp" class="form-text d-none text-muted">We'll never share your email with anyone else.</small>
+                                                            </div>
+                                                </div>
+            
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Description</label>
+                                            <textarea name="" class="form-control" id="" placeholder="Information about event"  rows="5"></textarea>
+                                            <small id="emailHelp" class="form-text d-none text-muted">We'll never share your email with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="exampleInputPassword1">Add Tags</label>
+                                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Rooftop,Live Music,Drinks,Food and Drinks,Poolside,Beach">
+                                            </div>
+                                            <div class="form-group">
+                                                    <label for="exampleInputPassword1">Additional Info</label>
+                                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+                                                </div>
+            
+                                    
+                            </div>
+            
                         </div>
-                        <div class="event-detials-block">
-                            <i class="fas fa-clock"></i>
-                            <span>7:30 pm - 12 midnight</span>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                    <label for="exampleInputPassword1">Image/Poster</label>
+                                    <div class="image-poster pointer"></div>
+                                    <small id="emailHelp" class="form-text mt-2 text-right text-muted">Please ensure your image is at least 1920 x 1440px</small>
+                                </div>
+            
                         </div>
-                        <div class="event-detials-block">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Asafoatse Tempong St, Accra</span>
-                        </div>
-                        <div class="event-detials-block">
-                            <i class="fas fa-globe-europe"></i>
-                            <a href="">www.hotspot.com</a>
-                        </div>
+            
                     </div>
 
-                    <div class="event-map">
-                        <div class="act-map">
+                    <h4 class="mt-5 mb-4 section-title">Organiser</h4>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                                
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Name</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Echo House">
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Facebook</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="facebook.com/ ">
+                                    </div>
+                                   
+                                
+                                
+                              
+            
 
                         </div>
 
+                        <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                        <label for="exampleInputPassword1">Twitter</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="twitter.com/  ">
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="exampleInputPassword1">Instagram</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="instagram.com/ ">
+                                        </div>
+                        </div>
+
                     </div>
-
-            </div>
-
+            
+                    <div class="my-5 text-center">
+                            <a href="single-event.html" target="_blank"  class="btn btn-outline-primary mr-3">Preview</a>
+                        <a href="single-event.html" class="btn btn-primary text-light">Publish</a>
+                    </div>
+                    
+                </form>
         </div>
-
-    </div>
 </div>
-
 
 
 
@@ -260,6 +322,31 @@
     </div>
 </footer>
 
-    
+     
+<script>
+    $( ".event_range" ).hide();
+    $(document).ready(function(){
+
+      
+
+        var selected =  $( ".event_date" ).val();
+
+        $( ".event_date" ).change(function(){
+            var selected = $(this).val();
+            //   alert(selected);
+            if (selected == 'range'){
+                // alert("hey");
+                $( ".event_date" ).hide();
+                $( ".event_range" ).fadeIn('slow');
+            }
+        });
+        
+
+
+
+    });
+</script>
+
+
   </body>
 </html>

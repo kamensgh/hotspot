@@ -5,7 +5,6 @@
 
 {% block stylesheet %}
 <link href="{{ baseUrl }}/app/dist/styles/home.css" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 {% endblock %}
@@ -16,7 +15,7 @@
 
     <div class="">
         <div class="search-banner d-flex align-items-center">
-            <div class="searchcontent mt-0 mt-lg-5 container">
+            <div class="searchcontent mt-0 mt-lg-5 container" data-aos="fade-up" data-aos-once="true"  data-aos-duration="700">
                 <form action="">
                     <div class=" d-flex mb-4 flex-wrap">
                         <div class="group flex-fill">     
@@ -67,7 +66,7 @@
                 </form>
             </div>
         </div>
-        <div class="happening_now d-flex align-items-center">
+        <div class="happening_now d-flex align-items-center" data-aos="fade-up" data-aos-once="true"  data-aos-duration="800">
             <div class="container">
                 <div class="d-flex justify-content-center flex-wrap">
                     <h5 class="mr-4 mb-0"> Check Out whats happening now:</h5>
@@ -582,12 +581,7 @@
 {% endblock %}
 
 {% block scripts %} 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init();
-    </script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ 
 <script>
     $( ".event_range" ).hide();
     $(document).ready(function(){

@@ -5,7 +5,6 @@
 
 {% block stylesheet %}
 <link href="{{ baseUrl }}/app/dist/styles/events.css" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 {% endblock %}
@@ -68,7 +67,7 @@
 <div class="container my-5">
     <div class="py-0 py-lg-5">
             <div class="">
-                    <div class="container-fluid px-4" style="overflow: auto;">
+                    <div class="container-fluid px-4 px-md-4 px-lg-5" style="overflow: auto;">
                         <div class="d-flex event_list">
                             <div class="d-inline-flex justify-content-between flex-wrap w-100">
                                     <div class="card" data-aos="fade-up" data-aos-once="true"  data-aos-duration="1000">
@@ -402,11 +401,6 @@
 {% endblock %}
 
 {% block scripts %} 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-AOS.init();
-</script>
 
 <script>
     $( ".event_range" ).hide();
