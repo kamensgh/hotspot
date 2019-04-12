@@ -38,10 +38,10 @@ label{
     height: 240px;
     border: 1px dashed #c5c3c3;
     border-radius: 10px;
-
     background-image: url("../../../app/dist/images/image.png");
     background-repeat:no-repeat; 
     background-position: center;
+    background-size: 41px;
 
     &:focus,&:hover{
         box-shadow: 0 10px 10px rgba(29, 33, 43, 0.09);
