@@ -32,6 +32,10 @@
 .login-form-containter{
     height: calc(100vh);
 
+    @media (min-width: 1200px){
+        width: 78%;
+    }
+
     .title{
 
         h1{
