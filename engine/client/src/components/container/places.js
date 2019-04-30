@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import HomePresentation from '../presentation/home';
+import PlacesPresentation from '../presentation/events';
 const $ = window.$;
 
-class HomeContainer extends Component {
+class PlacesContainer extends Component {
     render() {
-        return <HomePresentation />;
+        return <PlacesPresentation />;
     }
 
     componentDidMount() {
@@ -22,4 +22,4 @@ class HomeContainer extends Component {
     }
 }
 
-export default HomeContainer;
+export default PlacesContainer;

@@ -27,18 +27,18 @@ const Header = () => {
 
 
                             <li className="nav-item pb-3 pb-lg-0 ">
-                                <Link className="nav-link" to="/">
+                                <Link to="/places" className="nav-link">
                                     <i className="fas fa-calendar-alt"></i>
                                     Places</Link>
                             </li>
                             <li className="nav-item pb-3 pb-lg-0 ">
-                                <Link className="nav-link" throw="/">
+                                <Link to="/events" className="nav-link">
                                     <i className="fas fa-cocktail"></i>
                                     Events</Link>
                             </li>
                             <li className="nav-item pb-3 navbar-profile-dropdown pb-lg-0 ">
                                 {/*<a className="nav-link login m-0" href="login.html">Login</a> */}
-                                <a className="nav-link" href="#" id="navbarProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                <a className="nav-link" id="navbarProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     <span className="d-none d-lg-block">
                                         <img className="topbar__avatar-img" src={process.env.PUBLIC_URL+"/images/01.jpg"} alt="avatar"/>
