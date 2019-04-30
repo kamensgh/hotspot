@@ -1,18 +1,14 @@
 import React, {Component} from 'react';
-import SearchComponent from './search';
-import MarqueeComponent from './marquee';
-import PartnerComponent from './partner';
 import BaseTemplate from '../shared/base';
+import SearchComponent from '../home/search';
 
-class HomePresentation extends Component {
+class PlacesPresentation extends Component {
     render() {
         return (
             <BaseTemplate>
                 <div className="">
                     <div className="">
                         <SearchComponent />
-                        <MarqueeComponent />    
-                        <PartnerComponent />
                     </div>
                 </div>
             </BaseTemplate>    
@@ -20,4 +16,4 @@ class HomePresentation extends Component {
     }
 }
 
-export default HomePresentation;
+export default PlacesPresentation;

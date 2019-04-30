@@ -2,11 +2,11 @@ import React from 'react';
 
 const SearchComponent = () => {
     return (
-        <div class="search-banner d-flex align-items-center">
-            <div class="searchcontent mt-0 mt-lg-5 container" data-aos="fade-up" data-aos-once="true"  data-aos-duration="700">
+        <div className="search-banner d-flex align-items-center">
+            <div className="searchcontent mt-0 mt-lg-5 container" data-aos="fade-up" data-aos-once="true"  data-aos-duration="700">
                 <form action="">
-                    <div class=" d-flex mb-4 flex-wrap">
-                        <div class="group flex-fill">     
+                    <div className=" d-flex mb-4 flex-wrap">
+                        <div className="group flex-fill">     
                             {/* <div class="d-block d-md-none text-light">Name</div> */}
                             <input type="text" className="form-control" placeholder="Search for anything"/>
                             {/* <label className="d-none d-md-block">Name</label> */}
