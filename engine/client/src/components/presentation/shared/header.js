@@ -41,7 +41,7 @@ const Header = () => {
                                 <a className="nav-link" href="#" id="navbarProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     <span className="d-none d-lg-block">
-                                        <img className="topbar__avatar-img" src="images/01.jpg" alt="avatar"/>
+                                        <img className="topbar__avatar-img" src={process.env.PUBLIC_URL+"/images/01.jpg"} alt="avatar"/>
                                             <p className="topbar__avatar-name">Brian Dalton </p> 
                                     </span>
 
