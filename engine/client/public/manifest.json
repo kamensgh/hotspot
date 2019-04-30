@@ -1,15 +1,57 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+    "dependencies": {
+      "main.js": {
+        "files": [
+          "scripts/utilities.js",
+          "scripts/main.js"
+        ],
+        "main": true
+      },
+      "main.css": {
+        "files": [
+          "styles/main.scss"
+        ],
+        "main": true
+      },
+      "login.css": {
+        "files": [
+          "styles/pages/login.scss"
+        ]
+      },
+      "home.css": {
+        "files": [
+          "styles/pages/home.scss"
+        ]
+      },
+      "single.css": {
+        "files": [
+          "styles/pages/single.scss"
+        ]
+      }, 
+      "events.css": {
+        "files": [
+          "styles/pages/events.scss"
+        ]
+      },
+      "create-event.css": {
+        "files": [
+          "styles/pages/create-event.scss"
+        ]
+      },
+      "places.css": {
+        "files": [
+          "styles/pages/places.scss"
+        ]
+      },
+      "search.css": {
+        "files": [
+          "styles/pages/search.scss"
+        ]
+      },
+      "jquery.js": {
+        "bower": [
+          "jquery"
+        ]
+      }
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
-}
+  }
