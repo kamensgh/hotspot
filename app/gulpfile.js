@@ -124,6 +124,18 @@ var cssTasks = function(filename) {
     })();
 };
 
+
+// ### JSHint
+// `gulp jshint` - Lints configuration JSON and project JS.
+gulp.task('jshint', function() {
+  return gulp.src([
+    'bower.json', 'gulpfile.js'
+  ].concat(project.js))
+    .pipe(jshint())
+    .pipe(jshint.reporter('jshint-stylish'))
+    .pipe(gulpif(enabled.failJSHint, jshint.reporter('fail')));
+});
+
 // ### JS processing pipeline
 // Example
 // ```
@@ -216,7 +228,7 @@ gulp.task('styles', function() {
 // ### Scripts
 // `gulp scripts` - Runs JSHint then compiles, combines, and optimizes Bower JS
 // and project JS.
-gulp.task('scripts', ['jshint'], function() {
+gulp.task('scripts', gulp.series('jshint', function() {
   var merged = merge();
   manifest.forEachDependency('js', function(dep) {
     merged.add(
@@ -227,7 +239,7 @@ gulp.task('scripts', ['jshint'], function() {
   });
   return merged
     .pipe(writeToManifest('scripts'));
-});
+}));
 
 // ### Fonts
 // `gulp fonts` - Grabs all the fonts and outputs them in a flattened directory
@@ -253,16 +265,7 @@ gulp.task('images', function() {
     .pipe(gulp.dest(path.dist + 'images'));
 });
 
-// ### JSHint
-// `gulp jshint` - Lints configuration JSON and project JS.
-gulp.task('jshint', function() {
-  return gulp.src([
-    'bower.json', 'gulpfile.js'
-  ].concat(project.js))
-    .pipe(jshint())
-    .pipe(jshint.reporter('jshint-stylish'))
-    .pipe(gulpif(enabled.failJSHint, jshint.reporter('fail')));
-});
+
 
 // ## HTML
 // `gulp views` - Runs htmlTasks
@@ -280,12 +283,12 @@ gulp.task('clean', require('del').bind(null, [path.dist]));
 // When a modification is made to an asset, run the build step for that
 // asset before running watch.
 gulp.task('watch', function () {
-  gulp.watch([path.source + 'styles/**/*'], ['styles']);
-  gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
-  gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
-  gulp.watch([path.source + 'images/**/*'], ['images']);
-  gulp.watch(['njk/**/*'], ['views']);
-  gulp.watch(['bower.json', 'assets/manifest.json'], ['build']);
+  gulp.watch([path.source + 'styles/**/*'], gulp.series('styles'));
+  gulp.watch([path.source + 'scripts/**/*'], gulp.series('jshint', 'scripts'));
+  gulp.watch([path.source + 'fonts/**/*'], gulp.series('fonts'));
+  gulp.watch([path.source + 'images/**/*'], gulp.series('images'));
+  gulp.watch(['njk/**/*'], gulp.series('views'));
+  gulp.watch(['bower.json', 'assets/manifest.json'], gulp.series('build'));
 });
 
 // ### Build
@@ -314,6 +317,9 @@ gulp.task('wiredep', function() {
 });
 // ### Gulp
 // `gulp` - Run a complete build. To compile for production run `gulp --production`.
-gulp.task('default', ['clean'], function() {
-  gulp.start('build');
-});
+// gulp.task('default', gulp.series('clean', function() {
+//   gulp.start('build');
+// }));
+
+
+gulp.task('default', gulp.parallel('styles', 'scripts', 'images', 'views', 'fonts'));
