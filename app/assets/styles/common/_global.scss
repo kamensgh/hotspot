@@ -244,6 +244,11 @@ $bagdeConfig: 0, 5, 10, 15, 20;
         background: rgba(26, 20, 31, 0.82);
 
     }
+
+    img{
+        object-fit: cover;
+        height: 500px;
+    }
 }
 
 .container-small::before {
