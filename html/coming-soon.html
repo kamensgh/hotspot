@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="../app/dist/styles/main.css" rel="stylesheet"> 
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Quicksand:300,400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    
+<link href="../app/dist/styles/coming-soon.css" rel="stylesheet">
+
+
+
+    <title>Coming Soon | Hotspot</title>
+  </head>
+  <body data-aos="fade" data-aos-once="true"  data-aos-duration="400">
+        
+
+        <div class="content">
+         
+
+          
+
+<div class="outer">
+    <div class="inner overflow-hidden position-relative">
+
+        <img class="img-fluid position-absolute" src="../app/dist/images/cover.jpg" alt="Card image cap">
+
+        <div class="overlay">
+            <div class="up">
+
+            </div>
+            <div class="down">
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+        </div>
+      
+
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+
+
+    
+
+<script>
+    // var step = 995;
+    // var scrolling = false;
+
+    // $(".inner").bind("click", function (event) {
+    //     event.preventDefault();
+    //     $(this).animate({
+    //         scrollTop: "+=" + step + "px"
+    //     });
+    // }).bind("mouseover", function (event) {
+
+    //     if ($(".inner").scrollTop() + $(".inner").innerHeight() >= $(".inner")[0].scrollHeight) {
+    //         scrolling = true;
+    //         scrollContent("up");
+    //     } else {
+    //         scrolling = true;
+    //         scrollContent("down");
+    //     }
+
+    // }).bind("mouseout", function (event) {
+    //     scrolling = false;
+    // });
+
+    // function scrollContent(direction) {
+    //     var amount = (direction === "up" ? "-=3px" : "+=3px");
+    //     $(".inner").animate({
+    //         scrollTop: amount
+    //     }, 1, function () {
+    //         if (scrolling) {
+    //             scrollContent(direction);
+    //         }
+    //     });
+    // }
+
+
+    var step = 25;
+    var scrolling = false;
+
+    // Wire up events for the 'scrollUp' link:
+    $(".down").bind("click", function (event) {
+        event.preventDefault();
+        // Animates the scrollTop property by the specified
+        // step.
+        $(".inner").animate({
+            scrollTop: "-=" + step + "px"
+        });
+    }).bind("mouseover", function (event) {
+        // scrolling = false;
+        scrolling = true;
+        console.log(scrolling);
+        scrollContent("up");
+    });
+
+
+    $(".up").bind("click", function (event) {
+        event.preventDefault();
+        $(".inner").animate({
+            scrollTop: "+=" + step + "px"
+        });
+    }).bind("mouseover", function (event) {
+        // scrolling = false;
+        scrolling = false;
+        // console.log(scrolling);
+        scrollContentF("down");
+    });
+
+    $(".overlay").bind("mouseout", function (event) {
+        event.preventDefault();
+        scrolling = null;
+        console.log(scrolling);
+    });
+
+    function scrollContent(direction) {
+        var amount = (direction === "up" ? "-=3px" : "+=3px");
+        $(".inner").animate({
+            scrollTop: amount
+        }, 1, function () {
+            if (scrolling) {
+                scrollContent(direction);
+            }
+        });
+    }
+
+    function scrollContentF(direction) {
+        var amount = (direction === "up" ? "-=3px" : "+=3px");
+        $(".inner").animate({
+            scrollTop: amount
+        }, 1, function () {
+            if (scrolling === false) {
+                scrollContentF(direction);
+            }
+        });
+    }
+</script>
+
+
+  </body>
+</html>
