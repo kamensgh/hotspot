@@ -1,6 +1,4 @@
-
-
-body{
+body {
     // background-color: #f9f9f9;
     font-family: 'Quicksand', sans-serif;
 }
@@ -10,15 +8,15 @@ html * {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.pointer{
+.pointer {
     cursor: pointer !important;
 }
 
-.form-control:focus{
+.form-control:focus {
     box-shadow: none;
 }
 
-.tags{
+.tags {
     padding: 10px 25px;
     background: #ececec;
     border-radius: 5px;
@@ -28,37 +26,67 @@ html * {
 }
 
 
-$bagdeConfig: 0, 5, 10, 15, 20; 
+
+// custom styles
+
+$bagdeConfig: 0,
+5,
+10,
+15,
+20;
+
 @each $tuple in $bagdeConfig {
     .top-#{($tuple)} {
         position: absolute !important;
-        top: $tuple!important;
+        top: $tuple !important;
     }
 }
 
+$bagdeConfig: 0,
+5,
+10,
+15,
+20;
 
-$bagdeConfig: 0, 5, 10, 15, 20; 
 @each $tuple in $bagdeConfig {
     .bottom-#{($tuple)} {
         position: absolute !important;
-        bottom: $tuple!important;
+        bottom: $tuple !important;
     }
 }
 
-$bagdeConfig: 0, 5, 10, 15, 20; 
+$bagdeConfig: 0,
+5,
+10,
+15,
+20;
+
 @each $tuple in $bagdeConfig {
     .left-#{($tuple)} {
         position: absolute !important;
-        left: $tuple!important;
+        left: $tuple !important;
     }
 }
 
-$bagdeConfig: 0, 5, 10, 15, 20; 
+$bagdeConfig: 0,
+5,
+10,
+15,
+20;
+
 @each $tuple in $bagdeConfig {
     .right-#{($tuple)} {
         position: absolute !important;
-        right: $tuple!important;
+        right: $tuple !important;
     }
+}
+
+.overflow-auto {
+    overflow: auto !important;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
 }
 
 .banner {
@@ -70,21 +98,21 @@ $bagdeConfig: 0, 5, 10, 15, 20;
     width: 100%;
     padding-bottom: 30px;
 
-    &.smaller{
+    &.smaller {
         height: 400px;
     }
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         height: 322px;
         padding-bottom: 9px;
     }
 
-    .form-text{
-        transition: 1s ease all; 
+    .form-text {
+        transition: 1s ease all;
     }
 
 
-    .overlay{
+    .overlay {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -96,14 +124,14 @@ $bagdeConfig: 0, 5, 10, 15, 20;
         transition: .2s;
     }
 
-    .title{
+    .title {
         font-family: 'Dancing Script', cursive;
         color: #fff;
         position: relative;
         z-index: 1;
     }
 
-    .name{
+    .name {
         font-size: 50px;
         line-height: 70px;
         letter-spacing: -1.5px;
@@ -112,21 +140,21 @@ $bagdeConfig: 0, 5, 10, 15, 20;
         position: relative;
         z-index: 1;
 
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             font-size: 32px;
         }
     }
 }
 
-.single-content{
+.single-content {
     padding-right: 70px;
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         padding: 0;
     }
 
 
-    h3{
+    h3 {
         font-size: 35px;
         line-height: 50px;
         letter-spacing: -1px;
@@ -134,28 +162,28 @@ $bagdeConfig: 0, 5, 10, 15, 20;
         font-weight: 500;
         color: #161822;
 
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             font-size: 29px;
             line-height: normal;
             margin: 0 0 13px;
         }
     }
 
-    p{
+    p {
         line-height: 32px;
         color: #161822;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         font-size: 20px;
 
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             font-size: 18px;
         }
     }
 }
 
 
-.section-title{
+.section-title {
     color: #00c670;
     font-weight: 500;
     text-align: center;
@@ -164,11 +192,11 @@ $bagdeConfig: 0, 5, 10, 15, 20;
     letter-spacing: -1.5px;
 }
 
-.info{
+.info {
     padding-left: 69px;
     border-left: 1px solid #e3e3e6;
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         padding-top: 37px;
         border: none;
         padding-left: 0px;
@@ -193,12 +221,13 @@ $bagdeConfig: 0, 5, 10, 15, 20;
                 cursor: pointer;
             }
 
-            i{
+            i {
                 color: #00c670;
                 margin-right: 20px;
             }
 
-            span,a{
+            span,
+            a {
                 color: #292b37;
                 text-transform: uppercase;
                 font-size: 16px;
@@ -209,10 +238,10 @@ $bagdeConfig: 0, 5, 10, 15, 20;
         }
     }
 
-    .event-map{
+    .event-map {
         margin: 0 0 50px;
 
-        .act-map{
+        .act-map {
             position: relative;
             overflow: hidden;
             border: 1px solid #f2f2f2;
@@ -225,10 +254,9 @@ $bagdeConfig: 0, 5, 10, 15, 20;
     }
 }
 
-
 //banners
 
-.search-banner{
+.search-banner {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -236,7 +264,7 @@ $bagdeConfig: 0, 5, 10, 15, 20;
     background-image: url(../../dist/images/5.jpg);
     background-position: center;
 
-    &::before{
+    &::before {
         content: "";
         position: absolute;
         height: 100%;
@@ -245,7 +273,7 @@ $bagdeConfig: 0, 5, 10, 15, 20;
 
     }
 
-    img{
+    img {
         object-fit: cover;
         height: 500px;
     }
@@ -256,9 +284,9 @@ $bagdeConfig: 0, 5, 10, 15, 20;
     position: absolute;
     height: 420px;
     width: 100%;
-    background-image:  url(../../dist/images/calendar.png), url(../../dist/images/light.png);
-    background-position: 104%,0;
-    background-size: 13rem,8rem;
+    background-image: url(../../dist/images/calendar.png), url(../../dist/images/light.png);
+    background-position: 104%, 0;
+    background-size: 13rem, 8rem;
     filter: blur(7px);
     background-repeat: no-repeat;
 
@@ -269,19 +297,19 @@ $bagdeConfig: 0, 5, 10, 15, 20;
 }
 
 
-.container-wide{
+.container-wide {
     width: 90%;
     margin: auto;
 }
 
 
-.show_all{
-    a{
+.show_all {
+    a {
         color: #ecb61f;
     }
 }
 
-footer{
+footer {
     background: #161822;
     color: #fff;
     padding: 73px 0 22px;
@@ -297,14 +325,14 @@ footer{
             margin: 0 0 20px;
         }
 
-        h4{
+        h4 {
             font-size: 24px;
             line-height: 34px;
             letter-spacing: -.5px;
             margin: 0;
             font-weight: 500;
 
-            a{
+            a {
                 color: #00c670;
             }
         }
@@ -314,11 +342,12 @@ footer{
         margin: 0 0 59px;
         padding: 0;
 
-        li{
+        li {
             display: inline-block;
             margin-right: 16px;
 
-            a,span{
+            a,
+            span {
                 display: block;
                 height: 30px;
                 width: 29px;
@@ -326,26 +355,26 @@ footer{
         }
     }
 
-    .footer__location{
+    .footer__location {
         margin: 0 0 59px;
 
         .footer--title {
             color: #fff;
             font-size: 16px;
-            font-family: cera-pro-bold,sans-serif;
+            font-family: cera-pro-bold, sans-serif;
             font-weight: 500;
             line-height: 24px;
             letter-spacing: .8px;
             text-transform: uppercase;
             margin: 0 0 10px;
 
-            i{
+            i {
                 color: #6465ff;
                 margin-right: 10px;
             }
         }
 
-        span a{
+        span a {
             font-size: 16px;
             line-height: 26px;
             letter-spacing: -.25px;

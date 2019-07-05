@@ -1,0 +1,137 @@
+<!-- coming-soon.nunjucks -->
+{% set title='Coming Soon' %}
+{% extends "base.njk" %}
+<!-- {% set baseUrl = ".." %} -->
+
+
+
+{% block stylesheet %}
+<link href="{{ baseUrl }}/app/dist/styles/coming-soon.css" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="outer">
+    <div class="inner overflow-hidden position-relative">
+
+        <img class="img-fluid position-absolute" src="{{baseUrl}}/app/dist/images/cover.jpg" alt="Card image cap">
+
+        <div class="overlay">
+            <div class="up">
+
+            </div>
+            <div class="down">
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}
+
+
+{% block scripts %}
+
+<script>
+    // var step = 995;
+    // var scrolling = false;
+
+    // $(".inner").bind("click", function (event) {
+    //     event.preventDefault();
+    //     $(this).animate({
+    //         scrollTop: "+=" + step + "px"
+    //     });
+    // }).bind("mouseover", function (event) {
+
+    //     if ($(".inner").scrollTop() + $(".inner").innerHeight() >= $(".inner")[0].scrollHeight) {
+    //         scrolling = true;
+    //         scrollContent("up");
+    //     } else {
+    //         scrolling = true;
+    //         scrollContent("down");
+    //     }
+
+    // }).bind("mouseout", function (event) {
+    //     scrolling = false;
+    // });
+
+    // function scrollContent(direction) {
+    //     var amount = (direction === "up" ? "-=3px" : "+=3px");
+    //     $(".inner").animate({
+    //         scrollTop: amount
+    //     }, 1, function () {
+    //         if (scrolling) {
+    //             scrollContent(direction);
+    //         }
+    //     });
+    // }
+
+
+    var step = 25;
+    var scrolling = false;
+
+    // Wire up events for the 'scrollUp' link:
+    $(".down").bind("click", function (event) {
+        event.preventDefault();
+        // Animates the scrollTop property by the specified
+        // step.
+        $(".inner").animate({
+            scrollTop: "-=" + step + "px"
+        });
+    }).bind("mouseover", function (event) {
+        // scrolling = false;
+        scrolling = true;
+        console.log(scrolling);
+        scrollContent("up");
+    });
+
+
+    $(".up").bind("click", function (event) {
+        event.preventDefault();
+        $(".inner").animate({
+            scrollTop: "+=" + step + "px"
+        });
+    }).bind("mouseover", function (event) {
+        // scrolling = false;
+        scrolling = false;
+        // console.log(scrolling);
+        scrollContentF("down");
+    });
+
+    $(".overlay").bind("mouseout", function (event) {
+        event.preventDefault();
+        scrolling = null;
+        console.log(scrolling);
+    });
+
+    function scrollContent(direction) {
+        var amount = (direction === "up" ? "-=3px" : "+=3px");
+        $(".inner").animate({
+            scrollTop: amount
+        }, 1, function () {
+            if (scrolling) {
+                scrollContent(direction);
+            }
+        });
+    }
+
+    function scrollContentF(direction) {
+        var amount = (direction === "up" ? "-=3px" : "+=3px");
+        $(".inner").animate({
+            scrollTop: amount
+        }, 1, function () {
+            if (scrolling === false) {
+                scrollContentF(direction);
+            }
+        });
+    }
+</script>
+
+{% endblock %}
