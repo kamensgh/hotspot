@@ -18,13 +18,12 @@
 
 
     
-<link href="../app/dist/styles/search.css" rel="stylesheet">
+<!-- <link href="../app/dist/styles/search.css" rel="stylesheet"> -->
 
 
 
 
-
-    <title>Search results | My Hotspot</title>
+    <title>Search results | EventPlug</title>
   </head>
   <body data-aos="fade" data-aos-once="true"  data-aos-duration="400">
         <div class="wrapper">
@@ -99,382 +98,388 @@
               <div class="">
                   
 
-<div class="align-items-end banner d-flex" style="background-image: url('../app/dist/images/70.jpg');">
 
-    <div class="container">
-        <h1 class="name">Search results for: "cocktail"</h1>
+<div class="search">
+
+
+    <div class="align-items-end banner d-flex" style="background-image: url('../app/dist/images/70.jpg');">
+
+        <div class="container">
+            <h1 class="name">Search results for: "cocktail"</h1>
+        </div>
+        <div class="overlay"></div>
     </div>
-    <div class="overlay"></div>
-</div>
 
-<div class="filters">
+    <div class="filters">
         <div class="container">
             <form action="" class="d-flex filters__column flex-column flex-md-row justify-content-between">
-                <div class="inner">     
-                    <input type="text" placeholder="Search for whatever"  class="form-control flex-fill">
-                    
+                <div class="inner">
+                    <input type="text" placeholder="Search for whatever" class="form-control flex-fill">
+
                 </div>
                 <div class="inner">
-                        <select name="event_category" class="filters__select flex-fill">
-                            <option value="all">All Categories</option>
-                            <option value="">Music</option>
-                        </select>
-                </div> 
+                    <select name="event_category" class="filters__select flex-fill">
+                        <option value="all">All Categories</option>
+                        <option value="">Music</option>
+                    </select>
+                </div>
                 <div class="inner">
-                        <select name="event_date" class="filters__select flex-fill event_date">
-                                <option value="all">Any Date</option>
-                                <option value="Today">Today</option>
-                                <option value="Tomorrow">Tomorrow</option>
-                                <option value="Today">This weekend</option>
-                                <option value="Tomorrow">This week</option>
-                                <option value="Today">Next week</option>
-                                <option value="Tomorrow">This month</option>
-                                <option value="Tomorrow">Next month</option>
-                                <option value="range">Pick a date range...</option>
-                            </select>
-    
-                            <div class="align-items-center event_range">
-                                    <div class="input-group date">
-                                            <input type="text" class="form-control flex-fill" placeholder="Start">
-                                          
-                                          </div>
-                                <span class="font-weight-bold p-2 text-muted">-</span>
-                                <div class="input-group date">
-                                    <input type="text" class="form-control flex-fill" placeholder="End">
-                                   
-                                  </div>
-                            </div>
-                   </div>
-            </form>
-                   
-        </div>
-</div>
+                    <select name="event_date" class="filters__select flex-fill event_date">
+                        <option value="all">Any Date</option>
+                        <option value="Today">Today</option>
+                        <option value="Tomorrow">Tomorrow</option>
+                        <option value="Today">This weekend</option>
+                        <option value="Tomorrow">This week</option>
+                        <option value="Today">Next week</option>
+                        <option value="Tomorrow">This month</option>
+                        <option value="Tomorrow">Next month</option>
+                        <option value="range">Pick a date range...</option>
+                    </select>
 
-<div class="container my-5">
-    <h2 class="section-title">Events</h2>
-    <div class="pb-lg-5 pt-lg-2 py-0">
+                    <div class="align-items-center event_range">
+                        <div class="input-group date">
+                            <input type="text" class="form-control flex-fill" placeholder="Start">
+
+                        </div>
+                        <span class="font-weight-bold p-2 text-muted">-</span>
+                        <div class="input-group date">
+                            <input type="text" class="form-control flex-fill" placeholder="End">
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="section-title">Events</h2>
+        <div class="pb-lg-5 pt-lg-2 py-0">
             <div class="events">
-                    <div class="container-fluid px-4" style="overflow: auto;">
-                        <div class="d-flex event_list">
-                            <div class="d-inline-flex justify-content-between flex-wrap w-100">
-                                    <div class="card">
-                                        <img class="card-img-top" src="../app/dist/images/42.jpg" alt="Card image cap">
-                                        <div class="card-body pt-4">
-                                                <div class="source-wrapper">
-                                                        <span class="source" title="">
-                                                                <img class="" src="../app/dist/images/01.jpg" alt="Card image cap" > 
-                                                        </span>
-                                                    </div>
-                                        <p class="card-text">
-                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
-                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
-                                            <span class="rate d-block text-muted small">Paid</span>
-                        
-                                        </p>
-                                        </div>
-                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
-                                        <small class="text-muted">Friday, Febuary 10th</small>
-                        
-                                        <div>
-                                            <i class="fas fa-share-alt text-muted mr-3"></i>
-                                            <i class="fas fa-bookmark text-muted"></i>
-                                            
-                                        </div>
-                                        
-                                        </div>
+                <div class="container-fluid px-4" style="overflow: auto;">
+                    <div class="d-flex event_list">
+                        <div class="d-inline-flex justify-content-between flex-wrap w-100">
+                            <div class="card">
+                                <img class="card-img-top" src="../app/dist/images/42.jpg" alt="Card image cap">
+                                <div class="card-body pt-4">
+                                    <div class="source-wrapper">
+                                        <span class="source" title="">
+                                            <img class="" src="../app/dist/images/01.jpg" alt="Card image cap">
+                                        </span>
                                     </div>
-                                    <div class="card">
-                                        <img class="card-img-top" src="../app/dist/images/65.jpg" alt="Card image cap">
-                                        <div class="card-body pt-4">
-                                                <div class="source-wrapper">
-                                                        <span class="source" title="">
-                                                                <img class="" src="../app/dist/images/01.jpg" alt="Card image cap" > 
-                                                        </span>
-                                                    </div>
-                                        <p class="card-text">
-                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
-                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
-                                            <span class="rate d-block text-muted small">Paid</span>
-                        
-                                        </p>
-                                        </div>
-                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
-                                        <small class="text-muted">Friday, Febuary 10th</small>
-                        
-                                        <div>
-                                            <i class="fas fa-share-alt text-muted mr-3"></i>
-                                            <i class="fas fa-bookmark text-muted"></i>
-                                            
-                                        </div>
-                                        
-                                        </div>
+                                    <p class="card-text">
+                                        <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                        <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                        <span class="rate d-block text-muted small">Paid</span>
+
+                                    </p>
+                                </div>
+                                <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Friday, Febuary 10th</small>
+
+                                    <div>
+                                        <i class="fas fa-share-alt text-muted mr-3"></i>
+                                        <i class="fas fa-bookmark text-muted"></i>
+
                                     </div>
-                                    <div class="card">
-                                        <img class="card-img-top" src="../app/dist/images/57.jpg" alt="Card image cap">
-                                        <div class="card-body pt-4">
-                                                <div class="source-wrapper">
-                                                        <span class="source" title="">
-                                                                <img class="" src="../app/dist/images/01.jpg" alt="Card image cap" > 
-                                                        </span>
-                                                    </div>
-                                        <p class="card-text">
-                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
-                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
-                                            <span class="rate d-block text-muted small">Paid</span>
-                        
-                                        </p>
-                                        </div>
-                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
-                                        <small class="text-muted">Friday, Febuary 10th</small>
-                        
-                                        <div>
-                                            <i class="fas fa-share-alt text-muted mr-3"></i>
-                                            <i class="fas fa-bookmark text-muted"></i>
-                                            
-                                        </div>
-                                        
-                                        </div>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="../app/dist/images/65.jpg" alt="Card image cap">
+                                <div class="card-body pt-4">
+                                    <div class="source-wrapper">
+                                        <span class="source" title="">
+                                            <img class="" src="../app/dist/images/01.jpg" alt="Card image cap">
+                                        </span>
                                     </div>
-                                    <div class="card">
-                                        <img class="card-img-top" src="../app/dist/images/55.jpg" alt="Card image cap">
-                                        <div class="card-body pt-4">
-                                                <div class="source-wrapper">
-                                                        <span class="source" title="">
-                                                                <img class="" src="../app/dist/images/01.jpg" alt="Card image cap" > 
-                                                        </span>
-                                                    </div>
-                                        <p class="card-text">
-                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
-                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
-                                            <span class="rate d-block text-muted small">Paid</span>
-                        
-                                        </p>
-                                        </div>
-                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
-                                        <small class="text-muted">Friday, Febuary 10th</small>
-                        
-                                        <div>
-                                            <i class="fas fa-share-alt text-muted mr-3"></i>
-                                            <i class="fas fa-bookmark text-muted"></i>
-                                            
-                                        </div>
-                                        
-                                        </div>
+                                    <p class="card-text">
+                                        <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                        <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                        <span class="rate d-block text-muted small">Paid</span>
+
+                                    </p>
+                                </div>
+                                <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Friday, Febuary 10th</small>
+
+                                    <div>
+                                        <i class="fas fa-share-alt text-muted mr-3"></i>
+                                        <i class="fas fa-bookmark text-muted"></i>
+
                                     </div>
-                                    <div class="card">
-                                        <img class="card-img-top" src="../app/dist/images/42.jpg" alt="Card image cap">
-                                        <div class="card-body pt-4">
-                                                <div class="source-wrapper">
-                                                        <span class="source" title="">
-                                                                <img class="" src="../app/dist/images/01.jpg" alt="Card image cap" > 
-                                                        </span>
-                                                    </div>
-                                        <p class="card-text">
-                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
-                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
-                                            <span class="rate d-block text-muted small">Paid</span>
-                        
-                                        </p>
-                                        </div>
-                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
-                                        <small class="text-muted">Friday, Febuary 10th</small>
-                        
-                                        <div>
-                                            <i class="fas fa-share-alt text-muted mr-3"></i>
-                                            <i class="fas fa-bookmark text-muted"></i>
-                                            
-                                        </div>
-                                        
-                                        </div>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="../app/dist/images/57.jpg" alt="Card image cap">
+                                <div class="card-body pt-4">
+                                    <div class="source-wrapper">
+                                        <span class="source" title="">
+                                            <img class="" src="../app/dist/images/01.jpg" alt="Card image cap">
+                                        </span>
                                     </div>
-                                    <div class="card">
-                                        <img class="card-img-top" src="../app/dist/images/65.jpg" alt="Card image cap">
-                                        <div class="card-body pt-4">
-                                                <div class="source-wrapper">
-                                                        <span class="source" title="">
-                                                                <img class="" src="../app/dist/images/01.jpg" alt="Card image cap" > 
-                                                        </span>
-                                                    </div>
-                                        <p class="card-text">
-                                            <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
-                                            <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
-                                            <span class="rate d-block text-muted small">Paid</span>
-                        
-                                        </p>
-                                        </div>
-                                        <div class="card-footer d-inline-flex justify-content-between align-items-center">
-                                        <small class="text-muted">Friday, Febuary 10th</small>
-                        
-                                        <div>
-                                            <i class="fas fa-share-alt text-muted mr-3"></i>
-                                            <i class="fas fa-bookmark text-muted"></i>
-                                            
-                                        </div>
-                                        
-                                        </div>
+                                    <p class="card-text">
+                                        <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                        <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                        <span class="rate d-block text-muted small">Paid</span>
+
+                                    </p>
+                                </div>
+                                <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Friday, Febuary 10th</small>
+
+                                    <div>
+                                        <i class="fas fa-share-alt text-muted mr-3"></i>
+                                        <i class="fas fa-bookmark text-muted"></i>
+
                                     </div>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="../app/dist/images/55.jpg" alt="Card image cap">
+                                <div class="card-body pt-4">
+                                    <div class="source-wrapper">
+                                        <span class="source" title="">
+                                            <img class="" src="../app/dist/images/01.jpg" alt="Card image cap">
+                                        </span>
+                                    </div>
+                                    <p class="card-text">
+                                        <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                        <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                        <span class="rate d-block text-muted small">Paid</span>
+
+                                    </p>
+                                </div>
+                                <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Friday, Febuary 10th</small>
+
+                                    <div>
+                                        <i class="fas fa-share-alt text-muted mr-3"></i>
+                                        <i class="fas fa-bookmark text-muted"></i>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="../app/dist/images/42.jpg" alt="Card image cap">
+                                <div class="card-body pt-4">
+                                    <div class="source-wrapper">
+                                        <span class="source" title="">
+                                            <img class="" src="../app/dist/images/01.jpg" alt="Card image cap">
+                                        </span>
+                                    </div>
+                                    <p class="card-text">
+                                        <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                        <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                        <span class="rate d-block text-muted small">Paid</span>
+
+                                    </p>
+                                </div>
+                                <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Friday, Febuary 10th</small>
+
+                                    <div>
+                                        <i class="fas fa-share-alt text-muted mr-3"></i>
+                                        <i class="fas fa-bookmark text-muted"></i>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="../app/dist/images/65.jpg" alt="Card image cap">
+                                <div class="card-body pt-4">
+                                    <div class="source-wrapper">
+                                        <span class="source" title="">
+                                            <img class="" src="../app/dist/images/01.jpg" alt="Card image cap">
+                                        </span>
+                                    </div>
+                                    <p class="card-text">
+                                        <span class="title d-block h5 mb-1">Ghana Tech Summit 2019</span>
+                                        <span class="time d-block text-muted small mb-1">4pm - 9pm</span>
+                                        <span class="rate d-block text-muted small">Paid</span>
+
+                                    </p>
+                                </div>
+                                <div class="card-footer d-inline-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Friday, Febuary 10th</small>
+
+                                    <div>
+                                        <i class="fas fa-share-alt text-muted mr-3"></i>
+                                        <i class="fas fa-bookmark text-muted"></i>
+
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-                       
+                    </div>
+
+                </div>
+                <div class="container show_all text-center">
+                    <a href="" class="">View more</a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="d-flex my-5 my-lg-4"></div>
+
+
+        <h2 class="section-title mt-5">Places</h2>
+        <div class="">
+            <div class="">
+                <div class="">
+
+                    <div class="tiny--cards mt-4 mb-5">
+                        <section class="mb-5 mb-md-0">
+                            <div class="d-flex pt-3 flex-wrap justify-content-between">
+                                <div class="card flex-row mb-5">
+                                    <a href="single-place.html">
+                                        <div class="card-header p-0 border-0">
+                                            <img src="../app/dist/images/233.jpeg" alt="" class="">
+                                        </div>
+                                        <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                            <p class="card-title mb-1 text-muted small">Dr Isert St, Accra</p>
+                                            <h4 class="card-text">+233 Jazz Bar & Grill</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="card flex-row mb-5">
+                                    <div class="card-header p-0 border-0">
+                                        <img src="../app/dist/images/CL.jpg" alt="" class="">
+                                    </div>
+                                    <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                        <p class="card-title mb-1 text-muted small"> Stanbic Heights</p>
+                                        <h4 class="card-text">Coco Lounge</h4>
+                                    </div>
+                                </div>
+
+                                <div class="card flex-row mb-5">
+                                    <div class="card-header p-0 border-0">
+                                        <img src="../app/dist/images/AZ.jpg" alt="" class="">
+                                    </div>
+                                    <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                        <p class="card-title mb-1 text-muted small">9 Sir. Arku Korsah Rd, Accra</p>
+                                        <h4 class="card-text">Azmera Restaurant</h4>
+                                    </div>
+                                </div>
+                                <div class="card flex-row mb-5">
+                                    <a href="single-place.html">
+                                        <div class="card-header p-0 border-0">
+                                            <img src="../app/dist/images/233.jpeg" alt="" class="">
+                                        </div>
+                                        <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                            <p class="card-title mb-1 text-muted small">Dr Isert St, Accra</p>
+                                            <h4 class="card-text">+233 Jazz Bar & Grill</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="card flex-row mb-5">
+                                    <div class="card-header p-0 border-0">
+                                        <img src="../app/dist/images/CL.jpg" alt="" class="">
+                                    </div>
+                                    <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                        <p class="card-title mb-1 text-muted small"> Stanbic Heights</p>
+                                        <h4 class="card-text">Coco Lounge</h4>
+                                    </div>
+                                </div>
+
+                                <div class="card flex-row mb-5">
+                                    <div class="card-header p-0 border-0">
+                                        <img src="../app/dist/images/AZ.jpg" alt="" class="">
+                                    </div>
+                                    <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                        <p class="card-title mb-1 text-muted small">9 Sir. Arku Korsah Rd, Accra</p>
+                                        <h4 class="card-text">Azmera Restaurant</h4>
+                                    </div>
+                                </div>
+                                <div class="card flex-row mb-5">
+                                    <a href="single-place.html">
+                                        <div class="card-header p-0 border-0">
+                                            <img src="../app/dist/images/233.jpeg" alt="" class="">
+                                        </div>
+                                        <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                            <p class="card-title mb-1 text-muted small">Dr Isert St, Accra</p>
+                                            <h4 class="card-text">+233 Jazz Bar & Grill</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="card flex-row mb-5">
+                                    <div class="card-header p-0 border-0">
+                                        <img src="../app/dist/images/CL.jpg" alt="" class="">
+                                    </div>
+                                    <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                        <p class="card-title mb-1 text-muted small"> Stanbic Heights</p>
+                                        <h4 class="card-text">Coco Lounge</h4>
+                                    </div>
+                                </div>
+
+                                <div class="card flex-row mb-5">
+                                    <div class="card-header p-0 border-0">
+                                        <img src="../app/dist/images/AZ.jpg" alt="" class="">
+                                    </div>
+                                    <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                        <p class="card-title mb-1 text-muted small">9 Sir. Arku Korsah Rd, Accra</p>
+                                        <h4 class="card-text">Azmera Restaurant</h4>
+                                    </div>
+                                </div>
+                                <div class="card flex-row mb-5">
+                                    <a href="single-place.html">
+                                        <div class="card-header p-0 border-0">
+                                            <img src="../app/dist/images/233.jpeg" alt="" class="">
+                                        </div>
+                                        <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                            <p class="card-title mb-1 text-muted small">Dr Isert St, Accra</p>
+                                            <h4 class="card-text">+233 Jazz Bar & Grill</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="card flex-row mb-5">
+                                    <div class="card-header p-0 border-0">
+                                        <img src="../app/dist/images/CL.jpg" alt="" class="">
+                                    </div>
+                                    <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                        <p class="card-title mb-1 text-muted small"> Stanbic Heights</p>
+                                        <h4 class="card-text">Coco Lounge</h4>
+                                    </div>
+                                </div>
+
+                                <div class="card flex-row mb-5">
+                                    <div class="card-header p-0 border-0">
+                                        <img src="../app/dist/images/AZ.jpg" alt="" class="">
+                                    </div>
+                                    <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
+                                        <p class="card-title mb-1 text-muted small">9 Sir. Arku Korsah Rd, Accra</p>
+                                        <h4 class="card-text">Azmera Restaurant</h4>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </section>
+
+
                     </div>
                     <div class="container show_all text-center">
                         <a href="" class="">View more</a>
                     </div>
-                 
-                       
                 </div>
+
+
+            </div>
+        </div>
     </div>
 
-    <div class="d-flex my-5 my-lg-4"></div>
-
-
-    <h2 class="section-title mt-5">Places</h2>
-    <div class="">
-            <div class="">
-                    <div class="">
-                       
-                        <div class="tiny--cards mt-4 mb-5">
-                                <section class="mb-5 mb-md-0">
-                                    <div class="d-flex pt-3 flex-wrap justify-content-between">
-                                        <div class="card flex-row mb-5">
-                                            <a href="single-place.html">
-                                                <div class="card-header p-0 border-0">
-                                                    <img src="../app/dist/images/233.jpeg" alt="" class="">
-                                                </div>
-                                                <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
-                                                    <p class="card-title mb-1 text-muted small">Dr Isert St, Accra</p>
-                                                    <h4 class="card-text">+233 Jazz Bar & Grill</h4>
-                                                </div>
-                                            </a>
-                                        </div>
-                            
-                                        <div class="card flex-row mb-5">
-                                            <div class="card-header p-0 border-0">
-                                                <img src="../app/dist/images/CL.jpg" alt="" class="">
-                                            </div>
-                                            <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
-                                                <p class="card-title mb-1 text-muted small"> Stanbic Heights</p>
-                                                <h4 class="card-text">Coco Lounge</h4>
-                                            </div>                                
-                                        </div>
-                            
-                                        <div class="card flex-row mb-5">
-                                            <div class="card-header p-0 border-0">
-                                                <img src="../app/dist/images/AZ.jpg" alt="" class="">
-                                            </div>
-                                            <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
-                                                <p class="card-title mb-1 text-muted small">9 Sir. Arku Korsah Rd, Accra</p>
-                                                <h4 class="card-text">Azmera Restaurant</h4>
-                                            </div>                                
-                                        </div>
-                                        <div class="card flex-row mb-5">
-                                            <a href="single-place.html">
-                                                <div class="card-header p-0 border-0">
-                                                    <img src="../app/dist/images/233.jpeg" alt="" class="">
-                                                </div>
-                                                <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
-                                                    <p class="card-title mb-1 text-muted small">Dr Isert St, Accra</p>
-                                                    <h4 class="card-text">+233 Jazz Bar & Grill</h4>
-                                                </div>
-                                            </a>
-                                        </div>
-                            
-                                        <div class="card flex-row mb-5">
-                                            <div class="card-header p-0 border-0">
-                                                <img src="../app/dist/images/CL.jpg" alt="" class="">
-                                            </div>
-                                            <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
-                                                <p class="card-title mb-1 text-muted small"> Stanbic Heights</p>
-                                                <h4 class="card-text">Coco Lounge</h4>
-                                            </div>                                
-                                        </div>
-                            
-                                        <div class="card flex-row mb-5">
-                                            <div class="card-header p-0 border-0">
-                                                <img src="../app/dist/images/AZ.jpg" alt="" class="">
-                                            </div>
-                                            <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
-                                                <p class="card-title mb-1 text-muted small">9 Sir. Arku Korsah Rd, Accra</p>
-                                                <h4 class="card-text">Azmera Restaurant</h4>
-                                            </div>                                
-                                        </div>
-                                        <div class="card flex-row mb-5">
-                                                <a href="single-place.html">
-                                                    <div class="card-header p-0 border-0">
-                                                        <img src="../app/dist/images/233.jpeg" alt="" class="">
-                                                    </div>
-                                                    <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
-                                                        <p class="card-title mb-1 text-muted small">Dr Isert St, Accra</p>
-                                                        <h4 class="card-text">+233 Jazz Bar & Grill</h4>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                
-                                            <div class="card flex-row mb-5">
-                                                <div class="card-header p-0 border-0">
-                                                    <img src="../app/dist/images/CL.jpg" alt="" class="">
-                                                </div>
-                                                <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
-                                                    <p class="card-title mb-1 text-muted small"> Stanbic Heights</p>
-                                                    <h4 class="card-text">Coco Lounge</h4>
-                                                </div>                                
-                                            </div>
-                                
-                                            <div class="card flex-row mb-5">
-                                                <div class="card-header p-0 border-0">
-                                                    <img src="../app/dist/images/AZ.jpg" alt="" class="">
-                                                </div>
-                                                <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
-                                                    <p class="card-title mb-1 text-muted small">9 Sir. Arku Korsah Rd, Accra</p>
-                                                    <h4 class="card-text">Azmera Restaurant</h4>
-                                                </div>                                
-                                            </div>
-                                            <div class="card flex-row mb-5">
-                                                <a href="single-place.html">
-                                                    <div class="card-header p-0 border-0">
-                                                        <img src="../app/dist/images/233.jpeg" alt="" class="">
-                                                    </div>
-                                                    <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
-                                                        <p class="card-title mb-1 text-muted small">Dr Isert St, Accra</p>
-                                                        <h4 class="card-text">+233 Jazz Bar & Grill</h4>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                
-                                            <div class="card flex-row mb-5">
-                                                <div class="card-header p-0 border-0">
-                                                    <img src="../app/dist/images/CL.jpg" alt="" class="">
-                                                </div>
-                                                <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
-                                                    <p class="card-title mb-1 text-muted small"> Stanbic Heights</p>
-                                                    <h4 class="card-text">Coco Lounge</h4>
-                                                </div>                                
-                                            </div>
-                                
-                                            <div class="card flex-row mb-5">
-                                                <div class="card-header p-0 border-0">
-                                                    <img src="../app/dist/images/AZ.jpg" alt="" class="">
-                                                </div>
-                                                <div class="card-block d-flex flex-column justify-content-center p-3 pl-4">
-                                                    <p class="card-title mb-1 text-muted small">9 Sir. Arku Korsah Rd, Accra</p>
-                                                    <h4 class="card-text">Azmera Restaurant</h4>
-                                                </div>                                
-                                            </div>
-                            
-                                        
-                                    </div>
-                                </section>
-                
-                             
-                        </div>
-                        <div class="container show_all text-center">
-                            <a href="" class="">View more</a>
-                        </div>
-                    </div>
-                 
-                       
-                </div>
-    </div>
 </div>
 
 
@@ -509,7 +514,7 @@
                     <div class="footer__contact-us">
                         <h3 class="footer--title">Contact us</h3>
                         <h4><a href="tel:0121 711 7300">+233 267 626 632</a></h4>
-                        <h4><a href="">info@hotspot.com</a></h4>
+                        <h4><a href="">info@eventplug.com</a></h4>
                     </div>
 
                     <ul class="social-links">
@@ -570,34 +575,26 @@
         </div>
 
         <div class="d-flex justify-content-center footer__copyright">
-                <span>© 2019 Whatever Name |  All Rights Reserved </span>
+                <span>© 2019 EventPlug |  All Rights Reserved </span>
         </div>
 
     </div>
 </footer>
 
-     
+    
 <script>
-    $( ".event_range" ).hide();
-    $(document).ready(function(){
-
-      
-
-        var selected =  $( ".event_date" ).val();
-
-        $( ".event_date" ).change(function(){
+    $(".event_range").hide();
+    $(document).ready(function () {
+        var selected = $(".event_date").val();
+        $(".event_date").change(function () {
             var selected = $(this).val();
             //   alert(selected);
-            if (selected == 'range'){
+            if (selected == 'range') {
                 // alert("hey");
-                $( ".event_date" ).hide();
-                $( ".event_range" ).fadeIn('slow');
+                $(".event_date").hide();
+                $(".event_range").fadeIn('slow');
             }
         });
-        
-
-
-
     });
 </script>
 

@@ -1,82 +1,130 @@
 body {
-    background-color: #FFE53B;
-    background-image: linear-gradient(147deg, #FFE53B 0%, #c43322 74%);
+  background-color: #19131f;
+  background-image: linear-gradient(45deg,
+      #19131f,
+      #19131d 49%,
+      #4e1319 0,
+      #4e1319 67%,
+      #6f1b13 0,
+      #6f1b13 76%,
+      #8f240e 0,
+      #8f240e 81%,
+      #8f240d 0,
+      #8f240d 82%,
+      #6f1a12 0,
+      #6f1b12);
 
-
-    // linear-gradient(156deg,#050508,#28272f,#050508);
-    height: 100vh;
-
+  // linear-gradient(156deg,#050508,#28272f,#050508);
+  height: 100vh;
 }
 
 .outer {
+  height: 100vh;
+  padding: 70px 150px;
 
-    height: 100vh;
-    padding: 70px 150px;
+  @media (max-width: 576px) {
+    padding: 0 !important;
+  }
+
+  @media (max-width: 768px) {
+    padding: 70px 78px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 70px 393px;
+  }
+
+  .inner {
+    height: 100%;
+    border-radius: 10px;
+
+    @media (max-width: 576px) {
+      border-radius: 0;
+    }
+
+    .overlay {
+      position: fixed;
+      // background: #ff000063;
+      left: 0;
+      right: 0;
+      top: 70px;
+      height: calc(100vh - 140px);
+      // z-index: 3;
+      margin: 0 150px;
+      display: flex;
+      flex-direction: row;
+
+      @media (max-width: 576px) {
+        margin: unset;
+        height: 100vh;
+        top: 0;
+        margin: unset !important;
+      }
+
+      @media (max-width: 768px) {
+        margin: 0 78px;
+      }
+    
+    
+      @media (min-width: 1200px) {
+        margin: 0 394px;
+      }
+
+      &::after,
+      &::before {
+        position: absolute;
+        width: 100%;
+        background: rgba(26, 20, 31, 0.35);
+
+        display: flex;
+        justify-content: center;
+        color: white;
+      }
+
+      &::before {
+        content: 'COMING SOON';
+        font-size: -webkit-xxx-large;
+        letter-spacing: 12px;
+        height: 50%;
+        top: 0;
+        align-items: flex-end;
+        border-radius: 10px 10px 0 0;
 
 
-
-    .inner {
-
-        height: 100%;
-        border-radius: 10px;
-
-
-        .overlay {
-            position: fixed;
-            // background: #ff000063;
-            left: 0;
-            right: 0;
-            top: 70px;
-            height: calc(100vh - 140px);
-            // z-index: 3;
-            margin: 0 150px;
-            display: flex;
-            flex-direction: row;
-
-            &::after,
-            &::before {
-
-                position: absolute;
-                width: 100%;
-                background: rgba(26, 20, 31, 0.35);
-               
-                display: flex;
-                justify-content: center;
-                color: white;
-
-            }
-
-            &::before {
-                content: "COMING SOON";
-                font-size: -webkit-xxx-large;
-                letter-spacing: 12px;
-                height: 50%;
-                top: 0;
-                align-items: flex-end;
-                border-radius: 10px 10px 0 0;
-            }
-
-            &::after {
-                content: "It will be ready when its ready";
-                font-size: larger;
-                height: 50%;
-                bottom: 0;
-                align-items: end;
-                border-radius:  0 0 10px 10px;
-            }
-
-            .up {
-                width: -webkit-fill-available;
-                // background: rgba(248, 209, 56, 0.15);
-                z-index: 3;
-            }
-
-            .down {
-                width: -webkit-fill-available;
-                // background: rgba(196, 51, 34, 0.15);
-                z-index: 3;
-            }
+        @media (max-width: 576px) {
+          font-size: 20px;
+          letter-spacing: 5px;
+          font-weight: bold;
+          border-radius: 0;
         }
 
+      }
+
+      &::after {
+        content: 'It will be ready when its ready';
+        font-size: larger;
+        height: 50%;
+        bottom: 0;
+        align-items: end;
+        border-radius: 0 0 10px 10px;
+
+
+        @media (max-width: 576px) {
+          border-radius: 0;
+        }
+      }
+
+      .up {
+        width: -webkit-fill-available;
+        // background: rgba(248, 209, 56, 0.15);
+        z-index: 3;
+      }
+
+      .down {
+        width: -webkit-fill-available;
+        // background: rgba(196, 51, 34, 0.15);
+        z-index: 3;
+      }
     }
+  }
 }

@@ -1,121 +1,124 @@
 
 
+    .login-bg-image {
+        background-image: url("../../../app/dist/images/5.jpg");
+        background-size: cover;
+        height: calc(100vh);
+        background-position: center;
 
-.login-bg-image{
-    background-image: url("../../../app/dist/images/5.jpg");
-    background-size: cover;
-    height: calc(100vh);
-    background-position: center;
-
-    .bg-image-inner{
+        .bg-image-inner {
 
 
-        .inner{
-            width: 40%;
-            background: #ffffffc9;
-            border-radius: 15px;
+            .inner {
+                width: 40%;
+                background: #ffffffc9;
+                border-radius: 15px;
 
-            &:after {
-                content: "";
-                display: block;
-                padding-bottom: 100%;
-              }
-              .content {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-              }
-        }
-    }
-}
+                &:after {
+                    content: "";
+                    display: block;
+                    padding-bottom: 100%;
+                }
 
-.login-form-containter{
-    height: calc(100vh);
-
-    @media (min-width: 1200px){
-        width: 78%;
-    }
-
-    .title{
-
-        h1{
-            font-size: 36px;
-            @media (max-width: 576px){
-                font-size: 30px;
+                .content {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
-      
     }
 
-}
+    .login-form-containter {
+        height: calc(100vh);
 
-.login-form{
+        @media (min-width: 1200px) {
+            width: 78%;
+        }
 
-    .border{
-        border-radius: 20px;
-        overflow: hidden;
-    }
-   
-}
+        .title {
 
+            h1 {
+                font-size: 36px;
 
-input[type='text'],input[type='password']{
-    background-color: white !important;
-    border:none !important;
-    height: 75px !important;
+                @media (max-width: 576px) {
+                    font-size: 30px;
+                }
+            }
 
-    &:focus{
-        box-shadow: none !important;
-        // border-left: 2px solid red !important;
-    }
-}
+        }
 
-
-.btn-primary {
-    background-color: #020202;
-    font-size: 15px;
-    border: none;
-
-
-    &:hover{
-        background-color: #020202;
     }
 
-    &:active{
-        background-color: #020202 !important;
+    .login-form {
+
+        .border {
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+    }
+
+
+    input[type='text'],
+    input[type='password'] {
+        background-color: white !important;
         border: none !important;
+        height: 75px !important;
+
+        &:focus {
+            box-shadow: none !important;
+            // border-left: 2px solid red !important;
+        }
     }
 
-    &:focus{
-        box-shadow: none !important;
+
+    .btn-primary {
+        background-color: #020202;
+        font-size: 15px;
+        border: none;
+
+
+        &:hover {
+            background-color: #020202;
+        }
+
+        &:active {
+            background-color: #020202 !important;
+            border: none !important;
+        }
+
+        &:focus {
+            box-shadow: none !important;
+        }
     }
-}
 
-.btn-outline-primary {
-    color: #787878;
-    border-color: #787878;
-
-    &:hover{
-        background-color: transparent;
+    .btn-outline-primary {
         color: #787878;
         border-color: #787878;
 
+        &:hover {
+            background-color: transparent;
+            color: #787878;
+            border-color: #787878;
+
+        }
+
+        &:active {
+            background-color: transparent !important;
+            color: #787878;
+            border-color: #787878 !important;
+
+        }
+
+        &:focus {
+            box-shadow: none !important;
+        }
     }
 
-    &:active{
+    .btn-outline-primary:not(:disabled):not(.disabled):active {
         background-color: transparent !important;
         color: #787878;
         border-color: #787878 !important;
-    
     }
 
-    &:focus{
-        box-shadow: none !important;
-    }
-}
-
-.btn-outline-primary:not(:disabled):not(.disabled):active{
-    background-color: transparent !important;
-    color: #787878;
-    border-color: #787878 !important;
-}
