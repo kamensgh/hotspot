@@ -3,6 +3,19 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1261px
+  xl: 1292px
 );
+
+
+.container {
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+
+
+  @media (max-width: 768px) {
+    padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+ 
+}
 
